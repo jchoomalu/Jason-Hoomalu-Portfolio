@@ -1,0 +1,18 @@
+.logo {
+    height: 150px;
+    min-width: 100%;
+    padding-right: 50px;
+}
+
+.accentbar  {
+    width: 110%;
+    left: -5%;
+    top: -15px;
+    z-index: 100;
+    position: relative;
+}
+
+.dropdown {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(10px + 1vw)
+}
