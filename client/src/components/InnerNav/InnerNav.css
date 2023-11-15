@@ -1,0 +1,29 @@
+.inner-nav {
+    height: 100px;
+    margin-top: -4%;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+}
+
+#inner-navbar > div > a {
+    color: white;
+    font-size: calc(10px + 1vw);
+    box-shadow: 0px 0px 2px white;
+    border-radius: 28px;
+    margin: 8px;
+}
+
+#inner-navbar > div > a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .inner-nav {
+        margin-top: -3%;
+    }
+}
+  
+  
