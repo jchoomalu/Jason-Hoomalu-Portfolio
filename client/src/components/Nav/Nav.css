@@ -14,8 +14,8 @@ body {
 
 .logo {
   height: 170px;
-  min-width: 100%;
-  padding-right: 50px;
+  width: 100%;
+  margin: auto;
 }
 
 .accentbar {
