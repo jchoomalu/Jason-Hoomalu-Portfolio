@@ -1,16 +1,17 @@
 .about-container {
-    background-image: url("../../assets//images/code_background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../../assets//images/code_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-image {
-    position: relative;
-    left: 12px;
+  position: relative;
+  left: 12px;
+  object-fit: contain;
 }
 
 .about-content-wrapper {
-  overflow: hidden; 
+  overflow: hidden; /* Hides the content that goes out of bounds */
 }
 
 .about-content {
@@ -22,7 +23,5 @@
 
 .about-content.hide {
   transform: translateX(500px);
-  opacity: .2;
+  opacity: 0.5;
 }
-
-
