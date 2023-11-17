@@ -9,7 +9,7 @@ import SymbolSagaMapEditor from "./pages/SymbolSagaMapEditor";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://glowing-quokka-a53f5d.netlify.app">
       <Nav />
       <Routes>
         <Route path="/" element={<About />} />
