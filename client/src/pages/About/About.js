@@ -37,7 +37,8 @@ function About() {
             <InformationBlock>
               <h2>I'm Jason, Full Stack Developer.</h2>
               <h5>Seeking meaningful, fair chance employment in technology.</h5>
-              <p>I am commited to leveraging my knowledge to produce creative web experiences through innovative design.</p>
+              <p>
+Innovative and dedicated professional committed to ongoing education and growth. Passionate about leveraging logic to untangle intricate challenges, I thrive on solving complex problems. My goal is to craft intuitive and user-friendly UX/UI components, utilizing my expertise to simplify everyday experiences for users.</p>
             </InformationBlock>
 
              : ""}
