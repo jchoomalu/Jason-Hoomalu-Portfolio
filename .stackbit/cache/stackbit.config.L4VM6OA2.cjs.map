@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../stackbit.config.js"],
+  "sourcesContent": ["import { defineStackbitConfig } from '@stackbit/types'\nimport { GitContentSource } from '@stackbit/cms-git'\n\nexport default defineStackbitConfig({\n  stackbitVersion: '~0.6.0',\n  contentSources: [\n    new GitContentSource({\n      rootPath: __dirname,\n      contentDirs: ['/client'],\n      models: [\n        // ...\n      ],\n      assetsConfig: {\n        referenceType: 'static',\n        staticDir: 'client/public',\n        uploadDir: 'images',\n        publicPath: '/',\n      },\n    }),\n  ],\n})"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,mBAAqC;AACrC,qBAAiC;AAEjC,IAAO,8BAAQ,mCAAqB;AAAA,EAClC,iBAAiB;AAAA,EACjB,gBAAgB;AAAA,IACd,IAAI,gCAAiB;AAAA,MACnB,UAAU;AAAA,MACV,aAAa,CAAC,SAAS;AAAA,MACvB,QAAQ;AAAA;AAAA,MAER;AAAA,MACA,cAAc;AAAA,QACZ,eAAe;AAAA,QACf,WAAW;AAAA,QACX,WAAW;AAAA,QACX,YAAY;AAAA,MACd;AAAA,IACF,CAAC;AAAA,EACH;AACF,CAAC;",
+  "names": []
+}
