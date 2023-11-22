@@ -64,6 +64,7 @@ function Navigation() {
             <NavDropdown.Item href="/symbolsaga">Symbol Saga</NavDropdown.Item>
             <NavDropdown.Item href="/ssmapeditor">SS Map Editor</NavDropdown.Item>
             <NavDropdown.Divider />
+            <NavDropdown.Item href="/allprojects">All Projects</NavDropdown.Item>
             <NavDropdown.Item href="/testimonials">Testimonials</NavDropdown.Item>
           </NavDropdown>
         </Container>
