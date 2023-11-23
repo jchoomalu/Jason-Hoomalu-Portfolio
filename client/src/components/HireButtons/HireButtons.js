@@ -1,5 +1,5 @@
 import React, {useState, useRef} from "react";
-import { Nav, Navbar, Button, OverlayTrigger, Overlay  } from "react-bootstrap";
+import { Nav, Navbar, Overlay  } from "react-bootstrap";
 import "./HireButtons.css"
 
 function HireButtons() {
