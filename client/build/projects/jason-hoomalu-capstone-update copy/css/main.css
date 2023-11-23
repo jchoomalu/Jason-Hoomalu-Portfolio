@@ -1,0 +1,1290 @@
+body {
+  background-color: black;
+  box-sizing: content-box;
+  font-family: fantasy;
+}
+
+.game-start {
+  box-sizing: content-box;
+  font-family: fantasy;
+  background-image: url("../images/backgrounds/backGameLG.png");
+}
+
+.hidden {
+  display: none;
+}
+
+.storyboard {
+  background-color: black;
+  width: 80%;
+  height: 90vh;
+  margin: 30px auto;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 10px 20px 50px black;
+  border-radius: 15px;
+}
+
+/*BEGIN PAGE ZERO STORY BOARD START STYLES*/
+.start-new-game {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  color: white;
+  border: 2px double rgb(32, 74, 90);
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.start-new-game:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px goldenrod;
+  color: goldenrod;
+}
+
+.start-btn {
+  background-color: black;
+  margin: 10px;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.game-btns {
+  margin-left: 25%;
+}
+
+.modal-btn {
+  border-radius: 15px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.start-btn:hover,
+.modal-btn:hover {
+  font-size: 1.4rem;
+  color: goldenrod;
+  box-shadow: 0px 0px 10px goldenrod;
+}
+
+.modal-footer {
+  background-color: black;
+  box-shadow: 10px 20px 50px black;
+}
+
+.story-board-start {
+  background-image: url("../images/backgrounds/backGameLG.png");
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 0rem;
+  text-align: center;
+  font-family: fantasy;
+  transition: all 3s ease-in-out;
+  z-index: 1;
+}
+
+.title-full {
+  font-size: 4rem;
+}
+
+.next-btn {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 50px auto;
+  position: absolute;
+  left: 80%;
+  top: 70%;
+}
+
+.next-btn:hover {
+  box-shadow: 0px 0px 15px goldenrod;
+}
+
+.right {
+  font-size: 2rem;
+}
+
+#continue-modal-img,
+#start-modal-img {
+  float: right;
+  height: 130px;
+  width: 130px;
+}
+
+#start-game {
+  margin-top: 200px;
+}
+
+/*END PAGE ZERO START SCREEN STYLES*/
+
+/*STORY PAGE STYLES */
+
+.story-page {
+  background-image: url("../images/backgrounds/symbolBlue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.story-page p {
+  font-size: 1.5em;
+  margin: 25px 25px;
+}
+
+/*END STORY PAGE STYLES */
+
+/*CAROUSEL STYLES*/
+.character-carousel-inner {
+  width: 25%;
+  min-width: 375px;
+  margin: 50px auto;
+}
+
+.storyboard-carousel {
+  background-image: url(../images/backgrounds/characterCarousel.jpg);
+  background-size: stretch;
+  background-attachment: fixed;
+  background-position: 200px 950px;
+}
+
+.char-thumb {
+  width: 300px;
+  height: 350px;
+  opacity: 0.85;
+  transition: all 0.4s ease-in;
+}
+
+.char-thumb:hover {
+  cursor: pointer;
+  width: 350px;
+  height: 400px;
+  opacity: 1;
+}
+
+.car-control {
+  height: 60px;
+  width: 60px;
+  border: 2px double rgb(32, 74, 90);
+  border-radius: 50%;
+  margin: auto;
+  background-color: black;
+  color: rgb(22, 26, 41);
+}
+
+.car-control:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 10px goldenrod;
+}
+
+/*END CHARACTER SELECT CAROUSEL STYLES*/
+.card {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100px;
+  background-size: 550px 900px;
+  width: 100%;
+  height: 90vh;
+  max-height: 90vh;
+  border-radius: 15px;
+}
+
+.card-body {
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.card-text {
+  font-size: 1.25rem;
+  margin: 15px auto;
+}
+
+.card-title {
+  font-size: 1.45rem;
+}
+
+.card-btns {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  z-index: 10;
+  font-size: 1.35em;
+}
+
+/*END CHARACTER SELECTION*/
+/*START HOME PAGE*/
+/*START HOME PAGE STYLES*/
+
+.story-board-home {
+  background-repeat: no-repeat;
+  background-position: top right;
+  backface-visibility: initial;
+}
+
+.nav-list {
+  list-style-type: none;
+  color: white;
+  font-size: 1.35em;
+}
+
+.nav-list:hover {
+  color: goldenrod;
+  cursor: pointer;
+  font-size: 1.45em;
+  text-decoration: underline goldenrod;
+}
+
+.npc-box {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  top: 70%;
+  z-index: 3;
+}
+
+.home-center {
+  margin: auto;
+}
+
+.master-image {
+  height: 200px;
+  z-index: 2;
+  position: absolute;
+  width: 20%;
+  top: 200px;
+}
+
+.dialog-box {
+  position: relative;
+  left: 30%;
+  top: -40px;
+  padding: 20px;
+  font-size: 1.15em;
+  z-index: 1;
+  width: 60%;
+  display: inline-block;
+  color: white;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 0px 0px 40px rgb(32, 74, 90);
+  border-radius: 40px;
+}
+
+.dialog-btn {
+  background-color: black;
+  border: 2px solid goldenrod;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 50px auto;
+  position: absolute;
+  left: 90%;
+  top: 40%;
+  z-index: 10;
+}
+
+.dialog-btn:hover {
+  box-shadow: 0px 0px 15px goldenrod;
+}
+
+.accent-line {
+  background-color: rgb(32, 74, 90);
+  height: 1px;
+  position: absolute;
+}
+
+.player-response-btn {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(32, 74, 90);
+  background-image: linear-gradient(
+    black,
+    black,
+    rgb(32, 74, 90),
+    black,
+    black
+  );
+}
+
+.player-response-btn:hover {
+  box-shadow: 0px 0px 15px goldenrod;
+  border: 2px double goldenrod;
+}
+
+.npc-icon {
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: black;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 0px 0px 15px goldenrod;
+  height: 120px;
+  width: 120px;
+  transition: all 0.25s ease;
+}
+
+.npc-icon:hover {
+  opacity: 1;
+  height: 130px;
+  width: 130px;
+  border: 5px double goldenrod;
+}
+
+.home-card-img {
+  border-radius: 50%;
+}
+
+.home-card {
+  padding: 5px;
+  color: white;
+  width: 100%;
+  border: 2px double goldenrod;
+  background-color: black;
+}
+
+.lg-item-home {
+  background-image: linear-gradient(
+    black,
+    black,
+    black,
+    rgb(32, 74, 90),
+    black,
+    black,
+    black
+  );
+  box-shadow: 0px 0px 10px goldenrod;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.lg-item-home:hover {
+  color: goldenrod;
+}
+
+/**********************************PORTAL STYLES*************************************/
+
+.portal-box {
+  position: relative;
+  padding: 20px;
+  font-size: 1.15em;
+  z-index: 1;
+  width: 60%;
+  display: inline-block;
+  color: white;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 0px 0px 40px rgb(32, 74, 90);
+  border-radius: 40px;
+}
+
+.portal-btn {
+  font-size: 1.4em;
+}
+
+.portal-portal {
+  height: 650px;
+  position: absolute;
+  z-index: 0;
+}
+
+.portal-player {
+  height: 350px;
+  left: 22.5%;
+  top: 25%;
+  position: relative;
+  z-index: 1;
+}
+
+.portal-master {
+  height: 250px;
+}
+
+.game {
+  position: relative;
+  max-width: 1300px;
+  background-color: black;
+  left: 10%;
+  top: 30px;
+  height: 85vh;
+  width: 80%;
+  min-height: 550px;
+  overflow: hidden;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 10px 20px 50px black;
+  border-radius: 15px;
+}
+
+.map-portal {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  z-index: 7;
+  top: 240px;
+  left: -10px;
+}
+
+.side-btn {
+  position: absolute;
+  left: 91%;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: 2px solid rgb(32, 74, 90);
+  box-shadow: 10px 20px 50px black;
+  border-radius: 15px;
+  margin-top: 50px;
+  opacity: 0.8;
+  z-index: 10001;
+}
+
+.side-btn:hover {
+  opacity: 1;
+  width: 85px;
+  height: 85px;
+  box-shadow: 0px 0px 8px goldenrod;
+  color: goldenrod;
+}
+
+.side-btn-glow {
+  box-shadow: 0px 0px 8px goldenrod;
+  border: 4px double goldenrod;
+  width: 90px;
+  height: 90px;
+}
+
+.side-btns-left {
+  position: relative;
+}
+
+.tooltip,
+.popover {
+  z-index: 10000001;
+}
+
+.tooltip-inner {
+  color: goldenrod;
+  font-family: Times New Roman;
+  box-shadow: 0px 0px 5px goldenrod;
+  border: 3px double rgb(32, 74, 90);
+  width: 130px;
+  font-size: 1.2em;
+}
+
+.player-info {
+  top: 80px;
+  background-size: 100px 100px;
+  background-position-x: -10px;
+  background-repeat: no-repeat;
+}
+
+.inventory-left,
+.inventory-right {
+  margin-top: -30px;
+}
+
+.inventory-info {
+  top: 180px;
+  background-image: url(../images/game/swords2.png);
+  background-size: 65px 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.communication-info {
+  top: 280px;
+  background-image: url(../images/game/x300.jpeg);
+  background-size: 65px 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-info {
+  top: 380px;
+  background-image: url(../images/game/menuIconDark.png);
+  background-size: 65px 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/**********************************MODAL STYLES*************************************/
+.modal {
+  z-index: 10000;
+}
+/*PLAYER MODAL*/
+.modal-content {
+  background-image: url(../images/backgrounds/backGameRightDark.png);
+  background-position-y: -130px;
+  border: 5px double rgb(32, 74, 90);
+  background-size: cover;
+}
+
+.modal-divider {
+  margin-top: 0px;
+  color: goldenrod;
+}
+
+.modal-divider-top {
+  margin-top: -18px;
+  padding: 4px;
+  color: goldenrod;
+}
+
+.modal-divider-bottom {
+  margin-top: -9.5px;
+  color: goldenrod;
+}
+
+.modal-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 4px double black;
+  background-image: linear-gradient(
+    rgb(32, 74, 90),
+    rgb(32, 74, 90),
+    black,
+    rgb(32, 74, 90),
+    rgb(32, 74, 90)
+  );
+}
+
+.top-right {
+  border-right: 1px solid goldenrod;
+}
+
+.modal-close {
+  position: absolute;
+  color: goldenrod;
+  font-weight: 800;
+  font-family: Segoe UI;
+  font-size: 1.5rem;
+  left: 90%;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  font-size: 1.65rem;
+  text-shadow: 0px 0px 10px goldenrod;
+}
+
+.player-modal-header-top {
+  margin-top: 10px;
+  width: 90%;
+  margin: 10px auto;
+  z-index: 10001;
+}
+
+.player-modal-top {
+  padding: 2px;
+  font-size: 1.25em;
+}
+
+.player-modal-center {
+  padding-top: 0px;
+  width: 60%;
+  margin-top: -10px;
+}
+
+.player-modal-title {
+  margin: auto;
+  font-size: 1.65em;
+}
+
+.player-modal-abilities {
+  max-height: 150px;
+  width: 60%;
+  overflow: scroll;
+}
+
+.ability-list-item {
+  background-color: black;
+  border: 4px double rgb(32, 74, 90);
+  opacity: 0.75;
+  padding: 5px;
+  font-size: 1.25rem;
+  width: 70%;
+  margin: auto;
+}
+
+.ability-list-item:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px goldenrod;
+  color: goldenrod;
+}
+
+.player-spells-title {
+  margin: auto;
+  font-size: 1.65em;
+}
+
+.player-spells-icon {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+}
+
+.player-title-icon {
+  position: absolute;
+  height: 40px;
+  width: 30px;
+  left: 60px;
+  top: 15px;
+}
+
+.player-modal-bottom-header {
+  margin-top: -30px;
+  z-index: 10001;
+  width: 90%;
+  margin: auto;
+}
+
+.lg-stats {
+  padding: 4px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 2px auto;
+  width: 45%;
+  font-size: 1.45rem;
+  border: 2px double rgb(32, 74, 90);
+  border-radius: 10px;
+}
+
+/*INVENTORY MODAL*/
+.bonus-info {
+  position: absolute;
+  color: white;
+}
+
+.bonus {
+  padding: 0px;
+  margin: 0px;
+}
+
+.equipped-helm {
+  position: relative;
+  background-image: url(../images/game/headBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.equipped-amulet {
+  position: relative;
+  background-image: url(../images/game/amuletBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 30px;
+  width: 70px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.equipped-armor {
+  position: relative;
+  background-image: url(../images/game/armorBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 150px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.equipped-weapons {
+  position: relative;
+  background-image: url(../images/game/swordBlank.png);
+  background-size: 100px 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px groove black;
+  height: 150px;
+  width: 100px;
+}
+
+.equipped-shield {
+  position: relative;
+  background-image: url(../images/game/shieldBlank.png);
+  background-size: 100px 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px groove black;
+  height: 150px;
+  width: 100px;
+}
+
+.equipped-belt {
+  position: relative;
+  background-image: url(../images/game/beltBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 30px;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.equipped-boots {
+  position: relative;
+  background-image: url(../images/game/bootsBlank.png);
+  background-size: cover;
+  background-position: center;
+  border: 5px groove black;
+  height: 90px;
+  width: 70px;
+}
+
+.equipped-gloves {
+  position: relative;
+  background-image: url(../images/game/glovesBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 90px;
+  width: 70px;
+}
+
+.equipped-ring {
+  position: relative;
+  background-image: url(../images/game/ringBlank.png);
+  background-size: cover;
+  border: 5px groove black;
+  height: 60px;
+  width: 45px;
+}
+
+.item-list {
+  overflow: scroll;
+  max-height: 340px;
+}
+
+.item-square {
+  border: 4px double rgb(32, 74, 90);
+  padding: 5px;
+  opacity: 0.75;
+  width: 95%;
+  margin: auto;
+}
+
+.item-square:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px goldenrod;
+  color: goldenrod;
+}
+
+.golden-border {
+  text-shadow: 0px 0px 10px goldenrod;
+  border: 4px double goldenrod;
+}
+
+.item-icon {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 15px;
+}
+
+/*COMMUNICATOR MODAL*/
+.comms-content {
+  background-image: url(../images/game/x300.jpeg);
+  background-color: black;
+  background-size: 250px 340px;
+  background-repeat: no-repeat;
+  background-position: 655px;
+}
+
+.comms-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 5px;
+  border: 2px double rgb(32, 74, 90);
+}
+
+.comms-active {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px goldenrod;
+  padding: 2px;
+  margin-left: 20%;
+  border: 2px double rgb(32, 74, 90);
+}
+
+.comms-contacts {
+  max-height: 250px;
+  overflow: scroll;
+}
+
+.comms-messages {
+  max-height: 250px;
+  overflow: scroll;
+}
+
+/*MENU MODAL*/
+
+.menu-img {
+  border-radius: 50%;
+  height: 80px;
+  width: 100px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+
+.menu-name {
+  margin-top: 20px;
+}
+
+.menu-btn {
+  position: relative;
+  width: 50%;
+  margin: 10px auto;
+  color: white;
+  border: 2px double rgb(32, 74, 90);
+  border-radius: 10px;
+}
+
+.menu-btns {
+  max-height: 250px;
+}
+
+.menu-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px goldenrod;
+  color: goldenrod;
+}
+/*MAP STYLES*/
+
+.mapimg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+[data-front] {
+  z-index: 9;
+}
+
+[data-npc] {
+  width: 40px;
+  height: 50px;
+  margin-left: 2.5px;
+}
+
+#player {
+  position: absolute;
+  z-index: 8;
+  height: 50px;
+  width: 50px;
+}
+
+#player2 {
+  position: absolute;
+  z-index: 8;
+  height: 50px;
+  width: 35px;
+}
+
+/*POPUP DIALOG*/
+
+#popup {
+  position: absolute;
+  z-index: 100001;
+  color: white;
+  background-color: black;
+  background-image: url(../images/backgrounds/backGameLeftDark.png);
+  border-radius: 15px;
+  border: 5px double rgb(32, 74, 90);
+  box-shadow: 10px 20px 50px black;
+  width: 375px;
+  max-width: 350px;
+  min-width: 450px;
+  min-height: 350px;
+  width: 400px;
+  left: 33%;
+  top: 75px;
+  padding-bottom: 20px;
+}
+
+.popup-header {
+  height: 160px;
+}
+
+.popup-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.popup-name {
+  font-size: 1.25rem;
+}
+
+#popup-name1 {
+  position: relative;
+  top: -20px;
+  left: 40px;
+  z-index: 12;
+}
+
+#popup-name2 {
+  position: relative;
+  top: -60px;
+  left: 60%;
+  z-index: 12;
+}
+
+#popup-img-npc {
+}
+
+.popup-accent {
+  position: relative;
+  width: 80%;
+  margin: 5px auto;
+  color: goldenrod;
+  top: -120px;
+}
+
+#popup-title {
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: -50px;
+}
+
+#popup-content {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+}
+
+#popup-btn {
+  position: relative;
+  bottom: 5px;
+  left: 79%;
+  color: white;
+  box-shadow: 10px 20px 10px black;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  border: 2px double rgb(32, 74, 90);
+}
+
+#popup-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px goldenrod;
+  color: goldenrod;
+}
+
+#popup-response1,
+#popup-response2,
+#popup-response3 {
+  border-radius: 5px;
+  background-color: black;
+  border: 4px double rgb(32, 74, 90);
+  box-shadow: 10px 20px 50px black;
+  background-color: black;
+  width: 90%;
+  margin: 5px auto;
+  display: block;
+}
+#popup-response1:hover,
+#popup-response2:hover,
+#popup-response3:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 8px goldenrod;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+/*START BATTLE PAGE */
+
+.enemyWrapper {
+  height: 55%;
+  background-image: url("../images/backgrounds/rimrockCanyon.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.alert-battle {
+  position: absolute;
+  height: 50px;
+  width: 380px;
+  margin-left: 5px;
+  font-size: 1.25em;
+  font-family: Trebuchet MS;
+  padding: 15px;
+  color: white;
+}
+
+#enemy-battle-img {
+  position: relative;
+  height: 100px;
+  z-index: 10000;
+  height: 250px;
+}
+
+.player-battle-img {
+  position: relative;
+  z-index: 10;
+  top: -80px;
+  left: 150px;
+  height: 300px;
+  width: 250px;
+}
+
+.menu {
+  float: right;
+  position: relative;
+  border: 5px double rgb(32, 74, 90);
+  border-radius: 25px;
+  width: 380px;
+  height: 200px;
+  background-image: url(../images/backgrounds/symbolBlue.png);
+  background-repeat: no-repeat;
+  background-size: 90px 230px;
+  background-position: 15px;
+}
+
+.battle-btn {
+  position: relative;
+  top: -300px;
+  border-radius: 5px;
+  border: 2px double rgb(32, 74, 90);
+  background-color: black;
+  opacity: 0.85;
+  color: white;
+  width: 120px;
+  display: block;
+}
+
+.battle-btn:hover {
+  box-shadow: 0px 0px 4px goldenrod;
+  color: goldenrod;
+  background-color: black;
+  width: 127px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*PROGRESS BARS*/
+
+.enemy-bars {
+  width: 200px;
+  height: 12px;
+  position: absolute;
+  top: 285px;
+  left: 135px;
+}
+
+.player-bars {
+  width: 200px;
+  height: 12px;
+  position: relative;
+  top: -95px;
+  margin: 2px;
+}
+
+.enemy-health {
+  width: 100%;
+}
+
+.player-health {
+  width: 100%;
+}
+
+.player-rage {
+  width: 0%;
+}
+
+.player-magic {
+  width: 100%;
+}
+
+.green {
+  background-color: #00ff11;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: #ff0100;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/*END BATTLE STYLE*/
+
+/* SPELLS */
+.player-spell-box {
+  position: fixed;
+  z-index: 10001;
+  left: 69%;
+  top: 45%;
+  height: 120px;
+  width: 120px;
+}
+
+.enemy-spell-box {
+  position: fixed;
+  z-index: 10001;
+  left: 10%;
+  top: 7.5%;
+  height: 120px;
+  width: 120px;
+}
+
+.center-spell-box {
+  position: fixed;
+  z-index: 10001;
+  left: 42%;
+  top: 25%;
+  height: 120px;
+  width: 120px;
+}
+
+.player-spell-back {
+  position: absolute;
+  z-index: 0;
+  left: 64%;
+  top: 40%;
+  height: 400px;
+  width: 300px;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+}
+
+.enemy-spell-back {
+  position: absolute;
+  z-index: 1;
+  left: -2.5%;
+  top: -2.5%;
+  height: 400px;
+  width: 300px;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  opacity: 0.1;
+  position: absolute;
+}
+
+@media screen and (max-width: 775px) {
+  #popup {
+    left: 100px;
+    width: 300px;
+  }
+  .master-image {
+    display: none;
+  }
+  .dialog-box {
+    width: 80%;
+    left: 0%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  #popup {
+    left: 10px;
+    width: 200px;
+  }
+
+  /*BEGIN PAGE FIVE BATTLE PAGE*/
+  .enemyWrapper {
+    height: 40%;
+  }
+
+  .menu {
+    width: 200px;
+    position: relative;
+    left: -100px;
+    top: 55px;
+    margin-top: -20px;
+  }
+
+  .player-bars {
+    left: 25px;
+    top: -90px;
+  }
+
+  .enemy-bars {
+    position: relative;
+    top: -40px;
+    left: 5px;
+  }
+
+  .alert-battle {
+    top: 290px;
+  }
+
+  /*START HOME PAGE STYLES*/
+  .nav-box {
+    position: relative;
+    top: -50px;
+  }
+
+  .npc-icon {
+    height: 65px;
+    width: 65px;
+  }
+
+  .npc-icon:hover {
+    height: 70px;
+    width: 70px;
+  }
+
+  .npc-box {
+    top: 75%;
+  }
+
+  .master-image {
+    display: none;
+  }
+
+  .dialog-box {
+    font-size: 1em;
+  }
+
+  .home-card {
+    width: 100%;
+  }
+
+  .points-available {
+    height: 100px;
+    width: 100px;
+  }
+
+  #player-items {
+    left: 25%;
+  }
+}

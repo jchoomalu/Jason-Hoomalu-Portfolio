@@ -5,7 +5,6 @@ import "./HireButtons.css"
 function HireButtons() {
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  const popover = <div>asdsadasdsa</div>
   
   return (
     <Navbar>
