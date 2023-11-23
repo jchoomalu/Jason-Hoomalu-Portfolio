@@ -8,6 +8,7 @@
 .about-image {
   position: relative;
   max-height: 400px;
+  min-height: 400px;
   right: -4%;
 }
 

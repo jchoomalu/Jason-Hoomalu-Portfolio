@@ -1,0 +1,85 @@
+/*START SCREEN ANIMATIONS */
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.blade-handle {
+  margin: auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.blade-cross {
+  margin: auto;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+.blade-left {
+  border-bottom-left-radius: 100%;
+  background-color: white;
+  margin-left: auto;
+}
+.blade-right {
+  border-bottom-right-radius: 100%;
+  background-color: white;
+  margin-right: auto;
+}
+
+/* DEATH ANIMATION */
+.death {
+  padding: 10px;
+  font-size: 40px;
+  transform-origin: center right;
+  animation: hinge 2s ease-in-out forwards;
+  }
+  @keyframes hinge{
+  15%{
+  transform: rotate(120deg);
+  width: 280px;
+  } 30%{
+  transform: rotate(60deg);
+  width: 200px;
+  } 40%{
+  transform: rotate(110deg);
+  width: 150px;
+  } 50%{
+  transform: rotate(70deg);
+  width: 120px;
+  } 60%{
+  transform: rotate(100deg);
+  width: 100px;
+  } 70%{
+  transform: rotate(80deg);
+  width: 80px;
+  } 80%{
+  transform: rotate(95deg);
+  width: 50px;
+  } 90%{
+  transform: rotate(85deg);
+  width: 20px;
+  } 100%{
+  transform: rotate(90deg);
+  width: 0px;
+}
+  }
+  
+.slashLeft {
+  position: absolute;
+  z-index: 10001;
+  top: 120px;
+  left: 85px;
+}
+
+.slashRight {
+  position: absolute;
+  z-index: 10001;
+  top: 160px;
+  left: 100px;
+}
+
+.hit {
+  position: absolute;
+  z-index: 10001;
+  background-color: red;
+  top: 140px;
+  left: 60px;
+  transform: skew(15deg);
+}

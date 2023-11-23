@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <Container>
-      <Form className='text-white col-12 col-md-9 mx-auto' onSubmit={handleSubmit}>
+      <Form className='text-white col-12 col-md-9 mx-auto' netlify onSubmit={handleSubmit}>
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control className='my-2' name="name" type="text" placeholder="Enter your name" />
@@ -32,7 +32,7 @@ const Contact = () => {
           <Form.Label>Message</Form.Label>
           <Form.Control as="textarea" rows={5} name="message" placeholder="Enter a message..." />
         </Form.Group>
-        <Button type="submit" className="btn btn-primary">Submit</Button>
+        <div type="submit" className="submit-btn my-3 w-75 text-center p-2 mx-auto">Send Message</div>
       </Form>
     </Container>
   );

@@ -1,0 +1,12 @@
+.submit-btn {
+  background-image: url("../../assets/images/leather_background.png");
+  color: white;
+  font-size: calc(8px + 1vw);
+  font-weight: bold;
+  border-radius: 28px;
+  margin: 8px;
+}
+
+.submit-btn:hover {
+  box-shadow: 0px 0px 5px white;
+}
