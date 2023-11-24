@@ -1,9 +1,8 @@
 .inner-nav {
     height: 100px;
     margin-top: -4%;
-    background-color: black;
-    display: flex;
-    align-items: flex-end;
+    background-image: url("../../assets//images/code_background.png");
+    background-size: cover;
 }
 
 #inner-navbar > div > a {
@@ -18,7 +17,6 @@
     background-color: white;
     color: black;
 }
-
 
 @media screen and (min-width: 1400px) {
     .inner-nav {

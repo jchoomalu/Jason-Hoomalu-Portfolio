@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+
+    <title>Symbol Saga</title>
+  </head>
+
+  <body>
+    <!--STORY LINE-->
+    <section id="page0" class="hidden">
+      <div class="storyboard story-board-start">
+        <div class="title-fade col-md-12">
+          <p class="title">Symbol Saga</p>
+          <div class="blade-handle col-12"></div>
+          <div class="blade-cross col-12"></div>
+          <div class="row">
+            <div class="blade-left"></div>
+            <div class="blade-right"></div>
+          </div>
+          <div class="game-btns">
+            <button
+              id="start-game"
+              class="btn start-btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#start-modal"
+            >
+              Start Game
+            </button>
+            <button
+              id="continue-game"
+              class="btn start-btn"
+              type="button"
+              disabled="true"
+              data-toggle="modal"
+              data-target="#continue-modal"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+        <button type="button" class="next-btn btn text-white hidden">
+          Next
+        </button>
+      </div>
+      <!--CONTAINER-->
+
+      <div id="start-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4 class="text-white text-center">
+                Starting a new game will overwrite all previous saved games.
+              </h4>
+              <button
+                type="button"
+                class="start-new-game text-white btn"
+                data-bs-target="modal"
+                data-bs-dismiss="modal"
+              >
+                New Game
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL-->
+      <div id="continue-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-body">
+            <img id="continue-modal-img" class="small-char-img" />
+            <h2 id="continue-modal-name" class="text-white"></h2>
+            <h4 id="continue-modal-level" class="text-white"></h4>
+            <h4 id="continue-modal-exp" class="text-white"></h4>
+          </div>
+          <div class="modal-content">
+            <!--MODAL BODY-->
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="start-new-game btn modal-btn"
+                data-bs-dismiss="modal"
+                data-bs-toggle="modal"
+                data-bs-target="#start-modal"
+              >
+                New Game
+              </button>
+              <button
+                type="button"
+                class="play-saved-game btn modal-btn"
+                data-bs-target="modal"
+                data-bs-dismiss="modal"
+              >
+                Play Saved
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page1" class="hidden">
+      <div class="storyboard story-board1 story-page">
+        <div class="mx-auto col-12">
+          <h1 class="page1-header text-white text-center">Humans</h1>
+          <h2 class="page1-sub text-white text-center">Arrogant, Marvelous.</h2>
+          <p class="page1-body page-body text-white">
+            We knew we were killing the planet. Preaching to the masses about
+            global warming and carbon emissions, all the while pumping enormous
+            amounts of pollution into the atmosphere.
+          </p>
+        </div>
+        <button class="next-btn btn text-white hidden">Next</button>
+      </div>
+      <!--CONTAINER-->
+    </section>
+
+    <section id="page2" class="hidden">
+      <div class="storyboard story-board2 story-page">
+        <div class="mx-auto col-12">
+          <h1 class="page2-header text-white text-center">INDUSTRY</h1>
+          <h3 class="page2-sub text-white text-center">Corporate Control</h3>
+          <p class="page2-body page-body text-white">
+            We reach the point of no return. Humans begin to evolve, children
+            are born with unusual abilities. The global corporation INDUSTRY
+            realize the increased levels of co2 are the cause. In an attempt to
+            harness the amazing power of the evolution, INDUSTRY begins
+            intentionally releasing co2 into the atmosphere. The world's
+            governments try to intervene, INDUSTRY is too strong.
+          </p>
+        </div>
+        <button class="next-btn btn text-white hidden">Next</button>
+      </div>
+      <!--CONTAINER-->
+    </section>
+
+    <section id="page3" class="hidden">
+      <div class="storyboard story-board3 story-page">
+        <div class="mx-auto col-12">
+          <h1 class="page3-header text-white text-center">War</h1>
+          <h3 class="page3-sub text-white text-center">Mass Destruction</h3>
+          <p class="page3-body page-body text-white">
+            War rages, starting in the West, INDUSTRY cuts off the fuel,
+            electricity, and water supplies, agriculture fails. The people are
+            divided, soldiers turn on their brothers for greed, children are
+            abandoned because of their strange abilities, all forms of
+            government crumble. INDUSTRY uses their resources to create highly
+            evolved human weapons. It seems the radiation levels from the war
+            increase the rate of evolution.
+          </p>
+        </div>
+        <button class="next-btn btn text-white hidden">Next</button>
+      </div>
+      <!--CONTAINER-->
+    </section>
+
+    <section id="page4" class="hidden">
+      <div class="storyboard story-board4 story-page">
+        <div class="mx-auto col-12">
+          <h1 class="page4-header text-white text-center">INDUSTRY Reigns</h1>
+          <h3 class="page4-sub text-white text-center">Humanity's Foothold</h3>
+          <p class="page4-body page-body text-white">
+            Over thousands of years INDUSTRY continues to destroy the planet.
+            They have found ways to speed up the evolution, poisoning the planet
+            further in the process. Yet, every generation is born stronger with
+            more natural abilities. A group of like-minded, highly evolved
+            people band together to form the group known as SYMBOL.
+          </p>
+          <h2 class="page4-header text-white text-right">
+            And they have decided to fight back...
+          </h2>
+        </div>
+        <button class="next-btn btn text-white hidden">Next</button>
+      </div>
+    </section>
+
+    <!--END STORY LINE-->
+
+    <!--CHARACTER SELECT CAROUSEL START-->
+    <section class="character-select hidden">
+      <div class="storyboard storyboard-carousel">
+        <div
+          id="character-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <h2 class="text-white text-center">Select A Character</h2>
+          <div class="carousel-inner character-carousel-inner">
+            <div class="carousel-item active">
+              <img class="char-thumb" src="images/playable/miloL.png" />
+            </div>
+            <div class="carousel-item">
+              <img class="char-thumb" src="images/playable/lingL.png" />
+            </div>
+            <div class="carousel-item">
+              <img class="char-thumb" src="images/playable/beauxL.png" />
+            </div>
+            <div class="carousel-item">
+              <img class="char-thumb" src="images/playable/alisaL.png" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#character-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon car-control"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#character-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon car-control"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--END CAROUSEL-->
+
+    <!--BEGIN CARDS-->
+
+    <section class="storyboard character-cards hidden">
+      <div id="card-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner card-carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="card">
+              <div class="card-body col-8">
+                <div class="row justify-content-evenly">
+                  <h5 class="card-title text-white character-type"></h5>
+                  <h5 class="card-title text-white character-race"></h5>
+                  <hr class="modal-divider" />
+                  <p
+                    class="card-text character-decription text-white text-center"
+                  ></p>
+                  <hr class="modal-divider" />
+                </div>
+              </div>
+              <div class="card-btns col-4 text-center">
+                <div
+                  class="card-play p-2 menu-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#char-name"
+                >
+                  Select Character
+                </div>
+                <div class="card-back p-2 menu-btn">Go Back</div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="100000">
+            <div class="card">
+              <div class="card-body col-8">
+                <hr class="modal-divider" />
+                <div class="text-center">
+                  <h5 class="text-white card-title">Player Statistics</h5>
+                  <hr class="modal-divider" />
+                  <hr class="modal-divider" />
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      Attack
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-attack"
+                    ></li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      Defense
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-defense"
+                    ></li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      Intelligence
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-intelligence"
+                    ></li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      Magic
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-magic"
+                    ></li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      dexterity
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-dexterity"
+                    ></li>
+                  </ul>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item lg-left col-6 lg-stats">
+                      Strength
+                    </li>
+                    <li
+                      class="list-group-item col-6 lg-stats player-mod-strength"
+                    ></li>
+                  </ul>
+                </div>
+                <hr class="modal-divider my-3" />
+                <div class="text-center m-2">
+                  <h5 class="text-white card-title">Skills / Abilities</h5>
+                </div>
+                <hr class="modal-divider" />
+                <hr class="modal-divider" />
+                <div class="modal-body">
+                  <div
+                    class="card-text text-white character-ability-decription col-8 text-center"
+                  ></div>
+                </div>
+              </div>
+              <div class="card-btns col-4 text-center">
+                <div
+                  class="card-play p-2 menu-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#char-name"
+                >
+                  Selcect Character
+                </div>
+                <div class="card-back p-2 menu-btn">Go Back</div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#card-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon car-control"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#card-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon car-control"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="char-name"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h3 class="modal-title text-white text-center">Character Name</h3>
+          </div>
+          <div class="modal-body">
+            <small class="small text-white"
+              >Please chose a name for your character</small
+            >
+            <input
+              id="character-name"
+              class="form-contol w-100"
+              type="text"
+              placeholder="name..."
+            />
+            <p id="validate-name" class="text-danger"></p>
+          </div>
+          <!--MODAL BODY-->
+          <div class="modal-footer">
+            <button
+              id="submit-name"
+              data-bs-dismiss="modal"
+              type="button"
+              class="btn modal-btn btn-block"
+            >
+              Play
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--END CHARACTER CARDS CHARACTER SELECTION-->
+
+    <section class="home-page hidden">
+      <div class="storyboard story-board-home">
+        <ul class="row my-2 justify-content-between">
+          <li class="col-1 nav-list active">Home</li>
+          <li
+            class="col-1 nav-list"
+            data-bs-toggle="modal"
+            href="#player-status"
+          >
+            Player
+          </li>
+          <li
+            class="col-1 nav-list"
+            data-bs-toggle="modal"
+            href="#player-inventory"
+          >
+            Items
+          </li>
+          <li
+            class="col-1 nav-list quest-btn"
+            data-bs-toggle="modal"
+            href="#player-communication"
+          >
+            Quests
+          </li>
+          <li class="col-1 nav-list" data-bs-toggle="modal" href="#player-menu">
+            Save
+          </li>
+        </ul>
+        <div class="npc-box row mx-auto">
+          <img
+            id="wynn"
+            class="npc-icon mx-auto"
+            src="images/npc/npcMain/masterWynnSR.png"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Quest Master Wynn"
+          />
+          <img
+            id="spren"
+            class="npc-icon mx-auto"
+            src="images/npc/npcMain/sprenSR.png"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Portal Master Spren"
+          />
+          <img
+            id="bosco"
+            class="npc-icon mx-auto"
+            src="images/npc/npcMain/drBoscoSR.png"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Doctor Bosco's Shop"
+          />
+          <img
+            id="kalii"
+            class="npc-icon mx-auto"
+            src="images/npc/npcMain/kaliiSR.png"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Battle Master Kalii"
+          />
+        </div>
+        <!--OPTIONBOX ROW-->
+        <div class="home-center">
+          <img class="master-image" />
+          <div class="dialog-box">
+            <p class="dialog-text"></p>
+            <button class="dialog-btn text-white" type="button">Next</button>
+            <div class="accent-line"></div>
+            <div id="player-response-one">
+              <button
+                id="response-one"
+                class="player-response-btn hidden"
+                type="button"
+              >
+                respond 1
+              </button>
+            </div>
+            <div id="player-response-two">
+              <div class="accent-line"></div>
+              <button
+                id="response-two"
+                class="player-response-btn hidden"
+                type="button"
+              >
+                respond 2
+              </button>
+            </div>
+            <div id="player-response-three">
+              <div class="accent-line"></div>
+              <button
+                id="response-three"
+                class="player-response-btn hidden"
+                type="button"
+              >
+                respond 3
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--STORYBOARD-->
+    <!--END HOME -->
+
+    <!--PORTAL-->
+    <section class="portal-page hidden">
+      <div class="storyboard storyboard-portal">
+        <img class="portal-master" src="images/npc/npcMain/spren.png" />
+        <div class="portal-box my-5"></div>
+        <div class="menu-btn w-25 p-2 text-center portal-btn">
+          Open Rift Portal
+        </div>
+        <img class="portal-portal hidden" src="images/game/portalLG.png" />
+        <img class="portal-player hidden" />
+      </div>
+    </section>
+
+    <!--SIDE BTNS -->
+    <div class="container side-btns hidden">
+      <span data-bs-toggle="modal" href="#player-status"
+        ><div
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Player"
+          class="side-btn player-info"
+        ></div
+      ></span>
+
+      <span data-bs-toggle="modal" href="#player-inventory"
+        ><div
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Inventory"
+          class="side-btn inventory-info"
+        ></div
+      ></span>
+
+      <span data-bs-toggle="modal" href="#player-communication"
+        ><div
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="X-300 Communicator"
+          class="side-btn communication-info"
+        ></div
+      ></span>
+
+      <span data-bs-toggle="modal" href="#player-menu"
+        ><div
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Quest Log"
+          class="side-btn menu-info"
+        ></div
+      ></span>
+    </div>
+
+    <section class="map hidden">
+      <div class="game">
+        <img id="player" class="players" />
+      </div>
+    </section>
+
+    <div id="popup" class="hidden">
+      <div class="popup-header container">
+        <div class="row popup-row justify-content-between">
+          <img id="popup-img-player" class="popup-img player-img-sm" />
+          <img id="popup-img-npc" class="popup-img npc-img-sm" />
+          <p id="popup-name1" class="popup-name"></p>
+          <p id="popup-name2" class="popup-name"></p>
+          <hr class="popup-accent" />
+          <hr class="popup-accent" />
+        </div>
+      </div>
+      <div id="popup-title"></div>
+      <div id="popup-content"></div>
+      <div id="popup-response">
+        <div id="popup-response1" class="p-1"></div>
+        <div id="popup-response2" class="p-1"></div>
+        <div id="popup-response3" class="p-1"></div>
+      </div>
+      <button id="popup-btn" class="btn m-2">continue</button>
+    </div>
+
+    <div class="player-spell-box"></div>
+    <div class="enemy-spell-box"></div>
+    <div class="enemy-spell-back"></div>
+    <div class="player-spell-back"></div>
+    <div class="center-spell-box"></div>
+
+    <!--BATTLE PAGE START-->
+    <section class="battle-page hidden">
+      <div class="storyboard">
+        <div class="enemyWrapper">
+          <img id="enemy-battle-img" />
+          <div class="progress enemy-bars">
+            <div
+              class="progress-bar enemy-health green"
+              role="progressbar"
+            ></div>
+          </div>
+        </div>
+        <div class="lower-screen">
+          <div class="alert-battle"></div>
+          <div class="menu my-5 my-md-2">
+            <div class="btns col-3 menu-btns">
+              <img class="player-battle-img" />
+              <button
+                class="btn battle-btn attack-btn mx-1 mt-4 mb-2"
+                type="button"
+              >
+                Attack
+              </button>
+              <button
+                id="magic-btn"
+                class="btn battle-btn mx-1 my-2"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#battle-magic"
+              >
+                Magic
+              </button>
+              <button
+                id="items-btn"
+                class="btn battle-btn mx-1 my-2"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#battle-items"
+              >
+                Items
+              </button>
+            </div>
+            <!--BTNS-->
+            <!--PROGRESSBARHEALTH-->
+            <div class="progress player-bars">
+              <div
+                class="progress-bar player-health green"
+                role="progressbar"
+              ></div>
+            </div>
+            <!--PROGRESSBARMAGIC-->
+            <div class="progress player-bars">
+              <div
+                class="progress-bar player-magic blue"
+                role="progressbar"
+              ></div>
+            </div>
+            <!--PROGRESSBARRAGE-->
+            <div class="progress player-bars">
+              <div
+                class="progress-bar player-rage red"
+                role="progressbar"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END BATTLE PAGE-->
+
+    <div
+      class="modal battle-items fade"
+      id="battle-items"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header player-modal-header-top">
+            <h5
+              class="modal-title player-modal-title player-mod-items text-white"
+            >
+              Items
+            </h5>
+            <img class="player-title-icon" src="images/game/protectDark.png" />
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container text-white top-container">
+              <div class="items-battle col-10 mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="use"></div>-->
+
+    <div
+      class="modal battle-magic fade"
+      id="battle-magic"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header player-modal-header-top">
+            <h5
+              class="modal-title player-modal-title player-mod-items text-white"
+            >
+              Magic
+            </h5>
+            <img class="player-title-icon" src="images/game/protectDark.png" />
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container text-white top-container">
+              <div class="magic-battle col-10 mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SIDE BUTTON MODALS-->
+
+    <div
+      class="modal player-modal fade"
+      id="player-status"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header player-modal-header-top">
+            <h5
+              class="modal-title player-modal-title player-mod-name text-white"
+            >
+              Milo
+            </h5>
+            <img class="player-title-icon" src="images/game/protectDark.png" />
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <hr class="modal-divider-top" />
+          <hr class="modal-divider-top" />
+          <div class="modal-body player-modal-top">
+            <div class="container text-white top-container">
+              <div class="row">
+                <div class="player-level col-6 top-right"></div>
+                <div class="player-mod-experience col-6"></div>
+              </div>
+              <div class="row">
+                <div class="player-mod-type col-6 top-right"></div>
+                <div class="player-mod-spheres col-6"></div>
+              </div>
+            </div>
+          </div>
+          <hr class="modal-divider" />
+          <div class="modal-body mx-auto player-modal-center">
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">Attack</li>
+              <li class="list-group-item col-6 lg-stats player-mod-attack"></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">Defense</li>
+              <li
+                class="list-group-item col-6 lg-stats player-mod-defense"
+              ></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">
+                Intelligence
+              </li>
+              <li
+                class="list-group-item col-6 lg-stats player-mod-intelligence"
+              ></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">Magic</li>
+              <li class="list-group-item col-6 lg-stats player-mod-magic"></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">Dexterity</li>
+              <li
+                class="list-group-item col-6 lg-stats player-mod-dexterity"
+              ></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item lg-left col-6 lg-stats">Strength</li>
+              <li
+                class="list-group-item col-6 lg-stats player-mod-strength"
+              ></li>
+            </ul>
+          </div>
+          <hr class="modal-divider" />
+          <div class="modal-header player-modal-bottom-header">
+            <h5 class="modal-title player-spells-title text-white">
+              Skills / Abilities
+            </h5>
+            <img class="player-spells-icon" src="images/game/spellsIcon.png" />
+          </div>
+          <hr class="modal-divider-bottom" />
+          <hr class="modal-divider-bottom" />
+          <div class="modal-body mx-auto player-modal-abilities">
+            <div
+              class="modal-body abilities-modal-items text-white text-center"
+            >
+              <div class="ability-list-item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--INVENTORY MODAL-->
+    <div
+      class="modal player-modal fade"
+      id="player-inventory"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header player-modal-header-top">
+            <h5 class="modal-title player-modal-title text-white">Inventory</h5>
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <hr class="modal-divider-top" />
+          <hr class="modal-divider-top" />
+          <div class="row">
+            <div class="inventory-left my-3 col-6">
+              <div class="modal-header player-modal-bottom-header">
+                <h5 class="modal-title player-spells-title text-white">
+                  Equipped
+                </h5>
+              </div>
+              <div class="modal-body inventory-modal-equipment">
+                <div class="bonus-info">
+                  <p class="bonus bonus-attack"></p>
+                  <p class="bonus bonus-defense"></p>
+                  <p class="bonus bonus-magic"></p>
+                  <p class="bonus bonus-health"></p>
+                </div>
+                <div data-type="helm" class="equipment equipped-helm"></div>
+                <div data-type="amulet" class="equipment equipped-amulet"></div>
+                <div class="row justify-content-between">
+                  <div
+                    data-type="weapon"
+                    class="mx-auto equipment equipped-weapons"
+                  ></div>
+                  <div
+                    data-type="armor"
+                    class="mx-auto equipment equipped-armor"
+                  ></div>
+                  <div
+                    data-type="shield"
+                    class="mx-auto equipment equipped-shield"
+                  ></div>
+                </div>
+                <div
+                  data-type="belt"
+                  class="mx-auto equipment equipped-belt"
+                ></div>
+                <div class="row justify-content-evenly">
+                  <div
+                    data-type="ring"
+                    class="mx-auto equipment equipped-ring"
+                  ></div>
+                  <div
+                    data-type="boots"
+                    class="mx-auto equipment equipped-boots"
+                  ></div>
+                  <div
+                    data-type="gloves"
+                    class="mx-auto equipment equipped-gloves"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="inventory-right my-3 col-5">
+              <div class="modal-header player-modal-bottom-header">
+                <h5 class="modal-title player-spells-title text-white">
+                  Items
+                </h5>
+              </div>
+              <div class="modal-body inventory-modal-items">
+                <div class="row item-list text-white"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--X-300 COMMUNICATOR MODAL-->
+    <div
+      class="modal player-modal fade"
+      id="player-communication"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content comms-content">
+          <div class="modal-header player-modal-header-top">
+            <h5 class="modal-title player-modal-title text-white">
+              X-300 Communication Device
+            </h5>
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <hr class="modal-divider-top" />
+          <hr class="modal-divider-top" />
+          <div class="modal-body player-modal-top">
+            <div class="container text-white top-container">
+              <div class="row">
+                <div class="col-4 comms-contacts">
+                  <h6>Contacts</h6>
+                  <div class="contact-bar">
+                    <img
+                      class="comms-img"
+                      src="images/npc/npcMain/sprenSR.png"
+                    />Master Spren
+                  </div>
+                  <div class="contact-bar">
+                    <img
+                      class="comms-img"
+                      src="images/npc/npcMain/drBoscoSR.png"
+                    />Doctor Bosco
+                  </div>
+                  <div class="contact-bar">
+                    <img
+                      class="comms-img"
+                      src="images/npc/npcMain/masterWynnSR.png"
+                    />Master Wynn
+                  </div>
+                  <div class="contact-bar">
+                    <img
+                      class="comms-img"
+                      src="images/npc/npcMain/kaliiSR.png"
+                    />Master Kalii
+                  </div>
+                </div>
+                <div class="col-7 comms-messages">
+                  You have no new messages....
+                </div>
+              </div>
+            </div>
+            <hr class="modal-divider" />
+            <div class="modal-body player-modal-center"></div>
+            <hr class="modal-divider" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MENU MODAL-->
+    <div
+      class="modal player-modal fade"
+      id="player-menu"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content menu-content">
+          <div class="modal-header player-modal-header-top">
+            <h5 class="modal-title player-modal-title text-white">
+              Symbol Saga
+            </h5>
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              X
+            </div>
+          </div>
+          <hr class="modal-divider-top" />
+          <hr class="modal-divider-top" />
+          <div class="modal-body player-modal-top">
+            <div class="row">
+              <img class="menu-img col-3" />
+              <h3 class="col-6 text-white player-mod-name"></h3>
+            </div>
+            <hr class="modal-divider" />
+            <div class="modal-body menu-modal-center text-white">
+              <h4 class="player-mod-level">Level:</h4>
+              <h4 class="player-mod-experience">Experience:</h4>
+              <h4 class="player-mod-spheres">Spheres:</h4>
+              <h4 class="player-mod-quest">Quest:</h4>
+            </div>
+            <hr class="modal-divider" />
+            <div class="menu-btn p-1 text-center">Unavailable In Demo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--Personal javascript-->
+    <script src="js/_animations.js"></script>
+    <script src="js/_levels.js"></script>
+    <script src="js/_characters.js"></script>
+    <script src="js/_items.js"></script>
+    <script src="js/_tiles.js"></script>
+    <script src="js/_main.js"></script>
+  </body>
+</html>
+
+<!--
+  <script src="https://cdn.tlm.cloud/jquery/3.5.1/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <script src="https://cdn.tlm.cloud/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.tlm.cloud/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.tlm.cloud/semantic-ui/2.4.1/semantic.min.js" integrity="sha384-6urqf2sgCGDfIXcoxTUOVIoQV+jFr/Zuc4O2wCRS6Rnd8w0OJ17C4Oo3PuXu8ZtF" crossorigin="anonymous"></script>
+</body>
+</html>
+-->
