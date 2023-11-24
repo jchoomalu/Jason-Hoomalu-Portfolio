@@ -13,7 +13,7 @@ const Contact = () => {
         <div class="form-group" id="name">
           <label for="name">Name</label>
           <input
-            class="form-control my-2"
+            class="form-control my-1"
             name="name"
             type="text"
             placeholder="Enter your name"
@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         <div class="row">
-          <div class="col my-2" md="6">
+          <div class="col my-1" md="6">
             <div class="form-group" id="email">
               <label for="email">Email address</label>
               <input
@@ -33,7 +33,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div class="col my-2" md="6">
+          <div class="col my-1" md="6">
             <div class="form-group" id="phone">
               <label for="phone">Phone Number</label>
               <input
@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div class="form-group my-2" id="message">
+        <div class="form-group my-1" id="message">
           <label for="message">Message</label>
           <textarea
             class="form-control"
