@@ -4,55 +4,57 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <Container>
-      <Form name="contact" className="text-white col-12 col-md-9 mx-auto" netlify>
-        <Form.Group controlId="name">
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            className="my-2"
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-          />
-        </Form.Group>
-        <Row>
-          <Col className="my-2" md={6}>
-            <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                placeholder="email@example.com"
-              />
-            </Form.Group>
-          </Col>
-          <Col className="my-2" md={6}>
-            <Form.Group controlId="phone">
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control
-                type="tel"
-                name="phone"
-                placeholder="Enter your phone number"
-              />
-            </Form.Group>
-          </Col>
-        </Row>
-        <Form.Group className="my-2" controlId="message">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={5}
-            name="message"
-            placeholder="Enter a message..."
-          />
-        </Form.Group>
-        <div className="text-center ">
-          <button type="submit" className="submit-btn my-3 w-75 p-2">
-            Send Message
-          </button>
+    <div class="container">
+    <form name="contact" class="text-white col-12 col-md-9 mx-auto" netlify>
+      <div class="form-group" id="name">
+        <label for="name">Name</label>
+        <input
+          class="form-control my-2"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="row">
+        <div class="col my-2" md="6">
+          <div class="form-group" id="email">
+            <label for="email">Email address</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
         </div>
-      </Form>
-    </Container>
+        <div class="col my-2" md="6">
+          <div class="form-group" id="phone">
+            <label for="phone">Phone Number</label>
+            <input
+              class="form-control"
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group my-2" id="message">
+        <label for="message">Message</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          name="message"
+          placeholder="Enter a message..."
+        ></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="submit-btn my-3 w-75 p-2">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>  
   );
 };
 
