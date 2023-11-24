@@ -2,11 +2,28 @@ import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <div class="container">
       <form
         name="contact"
         class="text-white col-12 col-md-9 mx-auto"
+        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-group" id="name">
