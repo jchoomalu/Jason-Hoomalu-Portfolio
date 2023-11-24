@@ -58,8 +58,8 @@ function WordSlinger() {
             )}
             {current === "technology" ? (
               <InformationBlock>
-                <h2>Symbol Saga</h2>
-                <h5>Tile Based RPG</h5>
+                <h2>Word Slinger</h2>
+                <h5>Interactive word quiz</h5>
                 <p>
                   Captivating quiz game using JavaScript, jQuery, HTML, and CSS.
                   Employs JavaScript for logic, jQuery for DOM manipulation, and
