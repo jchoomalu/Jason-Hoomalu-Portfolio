@@ -15,7 +15,10 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then(() => {
+        alert("Message Sent, I look forward to speaking with you.")
+        document.location.href = "/"
+      })
       .catch((error) => alert(error));
   };
 
