@@ -22,7 +22,7 @@ function SymbolSaga() {
     }, 50);
   };
 
-  const ssPlay = "./projects/jason-hoomalu-capstone-update copy/index.html";
+  const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
     <div>
@@ -42,10 +42,10 @@ function SymbolSaga() {
                 <h5>Tile Based RPG</h5>
                 <p>
                   Symbol Saga is a tile based rogue-like RPG. Travel in an
-                  imaginary world as lovable characters from my favorite RPG
-                  Final Fantasy Seven. The game is built entirely with HTML,
-                  CSS, and jQuery. I relied on Bootstrap 5 for responsiveness,
-                  and animeJS for battle animations.
+                  imaginary world as lovable characters the classic RPG Final
+                  Fantasy VII. The game is built entirely with HTML, CSS,
+                  JavaScript and jQuery. I relied on Bootstrap 5 for
+                  responsiveness, and animeJS for battle animations.
                 </p>
                 <a href={ssPlay} target="_blank" rel="noopener noreferrer">
                   Play Symbol Saga Demo
@@ -60,9 +60,9 @@ function SymbolSaga() {
                 <h2>Symbol Saga</h2>
                 <h5>Tile Based RPG</h5>
                 <p>
-                  The game is designed with object oriented programming concepts in
-                  mind. It is built entirely on the front end with HTML, CSS,
-                  JavaScript and jQuery. I relied on Bootstrap 5 for
+                  Symbol Saga is designed with object oriented programming
+                  concepts in mind. It is built entirely on the front end with
+                  HTML, CSS, JavaScript and jQuery. I relied on Bootstrap 5 for
                   responsiveness, Semantic UI for consistent stlying and animeJS
                   for battle animations.
                 </p>
@@ -88,7 +88,10 @@ function SymbolSaga() {
             )}
           </div>
         </div>
-        <Image className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block" src={jason}/>
+        <Image
+          className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
+          src={jason}
+        />
       </Row>
     </div>
   );

@@ -22,8 +22,8 @@ function SymbolSagaMapEditor() {
     }, 50);
   };
 
-  const ssMapPlay = "./projects/jason-hoomalu-capstone-update copy/map.html";
-  const ssPlay = "./projects/jason-hoomalu-capstone-update copy/index.html";
+  const ssMapPlay = "https://main--splendorous-pudding-738ee6.netlify.app/map.html";
+  const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
     <div>
