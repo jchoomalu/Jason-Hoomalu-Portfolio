@@ -45,6 +45,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="email@example.com"
+                required
               />
             </div>
           </div>
@@ -56,7 +57,7 @@ const Contact = () => {
                 class="form-control"
                 type="tel"
                 name="phone"
-                placeholder="Enter your phone number"
+                placeholder="Phone Number (optional)"
               />
             </div>
           </div>
