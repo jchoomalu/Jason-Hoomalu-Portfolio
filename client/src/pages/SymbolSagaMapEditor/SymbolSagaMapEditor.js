@@ -22,7 +22,8 @@ function SymbolSagaMapEditor() {
     }, 50);
   };
 
-  const ssMapPlay = "https://main--splendorous-pudding-738ee6.netlify.app/map.html";
+  const ssMapPlay =
+    "https://main--splendorous-pudding-738ee6.netlify.app/map.html";
   const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
@@ -47,8 +48,8 @@ function SymbolSagaMapEditor() {
                   the tile based RPG{" "}
                   <a href={ssPlay} target="_blank" rel="noopener noreferrer">
                     Symbol Saga
-                  </a>
-                  The editor uses math and array methods to build
+                  </a>{" "}
+                  The editor uses math and array methods to create
                   multi-dimensional arrays of tile ID's that can be used
                   directly in the Symbol Saga code base. Editor can also import
                   existing maps for quick and easy edits, as well as lay a tile
