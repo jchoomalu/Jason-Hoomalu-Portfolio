@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../../components/Footer/Footer";
 
 function Resume() {
   const [viewOnline, setViewOnline] = useState(false);
@@ -57,12 +58,14 @@ function Resume() {
             <p>Your browser does not support iframes.</p>
           </iframe>
         </div>
+        <Footer />
       </>
     );
   } else {
     return (
+      <>
       <div>
-        <div class="text-center container h-100">
+        <div class="text-center container h-100 mb-5">
           <button
             type="button"
             className="submit-btn my-3 w-50 p-2"
@@ -85,6 +88,8 @@ function Resume() {
           </button>
         </div>
       </div>
+      <Footer/>
+      </>
     );
   }
 }

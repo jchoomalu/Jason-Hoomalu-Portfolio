@@ -4,6 +4,7 @@ import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
 import HireButtons from "../../components/HireButtons/";
+import Footer from "../../components/Footer/Footer";
 import "./About.css";
 
 function About() {
@@ -97,7 +98,9 @@ function About() {
           src={jason}
         />
       </Row>
+      <Footer />
     </div>
+
   );
 }
 

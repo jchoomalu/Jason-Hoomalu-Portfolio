@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 
 const Contact = () => {
@@ -19,7 +20,8 @@ const Contact = () => {
   };
 
   return (
-    <div class="container">
+    <>
+    <div class="container mb-5">
       <form
         name="contact"
         class="text-white col-12 col-md-9 mx-auto"
@@ -74,12 +76,14 @@ const Contact = () => {
         </div>
 
         <div class="text-center">
-          <button type="submit" className="submit-btn my-3 w-75 p-2">
+          <button type="submit" className="submit-btn mb-5 w-75 p-2">
             Send Message
           </button>
         </div>
       </form>
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
 import HireButtons from "../../components/HireButtons";
+import Footer from "../../components/Footer/Footer";
 import "./SymbolSagaMapEditor.css";
 
 function SymbolSagaMapEditor() {
@@ -27,6 +28,7 @@ function SymbolSagaMapEditor() {
   const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -105,6 +107,8 @@ function SymbolSagaMapEditor() {
         />
       </Row>
     </div>
+    <Footer />
+    </>
   );
 }
 

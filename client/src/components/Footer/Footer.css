@@ -1,0 +1,12 @@
+.footer {
+  min-height: 250px;
+  background-image: url("../../assets/images/leather_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 20px 28px black;
+}
+
+.footer-link:hover {
+  color: #0000ee;
+  font-weight: 600;
+}

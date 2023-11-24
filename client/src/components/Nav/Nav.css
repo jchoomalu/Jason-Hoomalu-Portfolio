@@ -20,9 +20,9 @@ body {
 }
 
 .accentbar {
-  width: 115%;
-  left: -5%;
-  top: -30px;
+  width: 116%;
+  left: -8%;
+  top: -35px;
   z-index: 100;
   position: relative;
 }

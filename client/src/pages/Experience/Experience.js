@@ -4,6 +4,8 @@ import InformationBlock from "../../components/InformationBlock";
 import HireButtons from "../../components/HireButtons";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
+import Footer from "../../components/Footer/Footer";
+
 import "./Experience.css";
 
 function Experience() {
@@ -23,6 +25,7 @@ function Experience() {
   };
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -100,6 +103,8 @@ function Experience() {
 
       </Row>
     </div>
+    <Footer />
+    </>
   );
 }
 
