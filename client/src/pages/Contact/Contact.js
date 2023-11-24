@@ -6,7 +6,6 @@ const Contact = () => {
     <>
       <form
         name="contact v1"
-        method="post"
         data-netlify="true"
         onSubmit="submit"
       >
