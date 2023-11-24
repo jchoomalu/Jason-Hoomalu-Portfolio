@@ -1,67 +1,65 @@
 import React from "react";
+import { Container, Form, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div class="container">
-      <form
+    <Container>
+      <Form
         name="contact"
-        class="text-white col-12 col-md-9 mx-auto"
+        className="text-white col-12 col-md-9 mx-auto"
         netlify="true"
       >
-        <div class="form-group" id="name">
-          <label for="name">Name</label>
-          <input
-            class="form-control my-1"
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-          />
-        </div>
+        <Form.Group controlId="name">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter your name" name="name" />
+        </Form.Group>
 
-        <div class="row">
-          <div class="col my-1" md="6">
-            <div class="form-group" id="email">
-              <label for="email">Email address</label>
-              <input
-                class="form-control"
+        <Row>
+          <Col md="6">
+            <Form.Group controlId="email">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
                 type="email"
-                name="email"
                 placeholder="email@example.com"
+                name="email"
               />
-            </div>
-          </div>
+            </Form.Group>
+          </Col>
 
-          <div class="col my-1" md="6">
-            <div class="form-group" id="phone">
-              <label for="phone">Phone Number</label>
-              <input
-                class="form-control"
+          <Col md="6">
+            <Form.Group controlId="phone">
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control
                 type="tel"
-                name="phone"
                 placeholder="Enter your phone number"
+                name="phone"
               />
-            </div>
-          </div>
-        </div>
+            </Form.Group>
+          </Col>
+        </Row>
 
-        <div class="form-group my-1" id="message">
-          <label for="message">Message</label>
-          <textarea
-            class="form-control"
-            rows="5"
-            name="message"
+        <Form.Group controlId="message">
+          <Form.Label>Message</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={5}
             placeholder="Enter a message..."
-          ></textarea>
-        </div>
+            name="message"
+          />
+        </Form.Group>
 
-        <div class="text-center">
-          <button type="submit" class="submit-btn my-3 w-75 p-2">
+        <div className="text-center">
+          <button
+            variant="primary"
+            type="submit"
+            className="submit-btn my-3 w-75 p-2"
+          >
             Send Message
           </button>
         </div>
-      </form>
-    </div>
+      </Form>
+    </Container>
   );
 };
 
