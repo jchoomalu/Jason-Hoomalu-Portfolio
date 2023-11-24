@@ -51,7 +51,7 @@ function Resume() {
           <iframe
             title="PDF Viewer"
             width="100%"
-            height="900px"
+            height="700px"
             src={myResume} // Replace this with the URL or path to your PDF file
           >
             <p>Your browser does not support iframes.</p>

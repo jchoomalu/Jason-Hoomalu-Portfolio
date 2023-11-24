@@ -26,8 +26,8 @@ function Navigation() {
       case "/contact":
         setActiveAbout("Contact");
         break;
-      case "/gotyoursix":
-        setActiveProjects("Got Your Six");
+      case "/wordslinger":
+        setActiveProjects("Word Slinger");
         break;
       case "/symbolsaga":
         setActiveProjects("Symbol Saga");
@@ -60,11 +60,10 @@ function Navigation() {
             <Image className="logo" src={logo} />
           </Navbar.Brand>
           <NavDropdown className="pill-dropdown" title={activeProjects} id="projectsDropdown">
-            <NavDropdown.Item href="/gotyoursix">Got Your Six</NavDropdown.Item>
             <NavDropdown.Item href="/symbolsaga">Symbol Saga</NavDropdown.Item>
             <NavDropdown.Item href="/ssmapeditor">SS Map Editor</NavDropdown.Item>
+            <NavDropdown.Item href="/wordslinger">Word Slinger</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/allprojects">All Projects</NavDropdown.Item>
             <NavDropdown.Item href="/testimonials">Testimonials</NavDropdown.Item>
           </NavDropdown>
         </Container>
