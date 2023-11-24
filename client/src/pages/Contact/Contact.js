@@ -8,7 +8,8 @@ const Contact = () => {
       <Form
         name="contact"
         className="text-white col-12 col-md-9 mx-auto"
-        netlify="true"
+        method="POST"
+        data-netlify="true"
       >
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
