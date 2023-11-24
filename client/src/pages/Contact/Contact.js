@@ -1,116 +1,43 @@
-import React from 'react';
-import { Container, Form, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Container, Form, Row, Col } from "react-bootstrap";
+import "./Contact.css";
 
-class HiddenFormComponent extends React.Component {
-  handleSubmit = async (event) => {
-    event.preventDefault();
+const Contact = () => {
 
-    const formData = new FormData(event.target);
 
-    try {
-      // Send data to your server or external API
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData,
-      });
+  
+  return (
+    <>
+      <form
+        name="contact v1"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contact v-1" />
 
-      if (response.ok) {
-        console.log('Data sent successfully!');
-        event.target.reset(); // Reset the visible form after successful submission
-      } else {
-        throw new Error('Failed to send data.');
-      }
-    } catch (error) {
-      console.error('Error sending data:', error);
-    }
+        <div>
+          <label>First Name
+            <input type="text" name="first-name"></input>
+          </label>
+        </div>
 
-    // Submit the hidden form for Netlify processing
-    const hiddenFormData = new FormData(document.forms.hiddenForm);
-    fetch('/', {
-      method: 'POST',
-      body: hiddenFormData,
-    })
-      .then(() => {
-        console.log('Hidden form submitted successfully');
-        // Optionally reset the hidden form after successful submission
-        // document.forms.hiddenForm.reset();
-      })
-      .catch((error) => {
-        console.error('Hidden form submission error:', error);
-      });
-  };
+        <div>
+          <label>Email
+            <input type="email" name="email"></input>
+          </label>
+        </div>
 
-  render() {
-    return (
-      <Container>
-        <Form
-          name="contact"
-          className="text-white col-12 col-md-9 mx-auto"
-          netlify
-          onSubmit={this.handleSubmit}
-        >
-          <Form.Group controlId="name">
-            <Form.Label>Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter your name" name="name" />
-          </Form.Group>
+        <div>
+          <label>Message
+            <textarea name="message"></textarea>
+          </label>
+        </div>
 
-          <Row>
-            <Col md="6">
-              <Form.Group controlId="email">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="email@example.com"
-                  name="email"
-                />
-              </Form.Group>
-            </Col>
+        <button type="submit">Send Message</button>
+      </form>
+    </>
+  );
+};
 
-            <Col md="6">
-              <Form.Group controlId="phone">
-                <Form.Label>Phone Number</Form.Label>
-                <Form.Control
-                  type="tel"
-                  placeholder="Enter your phone number"
-                  name="phone"
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-
-          <Form.Group controlId="message">
-            <Form.Label>Message</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={5}
-              placeholder="Enter a message..."
-              name="message"
-            />
-          </Form.Group>
-
-          <div className="text-center">
-            <button
-              variant="primary"
-              type="submit"
-              className="submit-btn my-3 w-75 p-2"
-            >
-              Send Message
-            </button>
-          </div>
-        </Form>
-
-        {/* Hidden form for Netlify submission */}
-        <Form name="hiddenForm" data-netlify="true" style={{ display: 'none' }}>
-          <Form.Control type="text" name="name" />
-          <Form.Control type="email" name="email" />
-          <Form.Control type="tel" name="phone" />
-          <Form.Control as="textarea" rows={5} name="message" />
-          {/* Add other necessary fields */}
-          <input type="hidden" name="form-name" value="contact" />
-        </Form>
-      </Container>
-    );
-  }
-}
-
-export default HiddenFormComponent;
+export default Contact;
