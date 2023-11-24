@@ -5,7 +5,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <Container>
-      <Form name="contact" method="POST" className="text-white col-12 col-md-9 mx-auto" netlify>
+      <Form name="contact" className="text-white col-12 col-md-9 mx-auto" netlify>
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control
