@@ -3,29 +3,13 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-  );
-};
-
-export default Contact;
-
-{/* <div class="container">
+    <div class="container">
       <form
         name="contact"
         class="text-white col-12 col-md-9 mx-auto"
         data-netlify="true"
+        netlify
       >
-        <input type="hidden" name="form-name" value="contact" />
         <div class="form-group" id="name">
           <label for="name">Name</label>
           <input
@@ -78,4 +62,8 @@ export default Contact;
           </button>
         </div>
       </form>
-    </div> */}
+    </div>
+  );
+};
+
+export default Contact;
