@@ -8,7 +8,7 @@ import Experience from "./pages/Experience";
 import WordSlinger from "./pages/WordSlinger";
 import SymbolSaga from "./pages/SymbolSaga";
 import SymbolSagaMapEditor from "./pages/SymbolSagaMapEditor";
-
+import Testimonials from "./pages/Testimonials";
 export const AppRouter = () => {
   return (
     <BrowserRouter>
@@ -23,6 +23,7 @@ export const AppRouter = () => {
         <Route path="/wordslinger" element={<WordSlinger />} />
         <Route path="/symbolsaga" element={<SymbolSaga />} />
         <Route path="/ssmapeditor" element={<SymbolSagaMapEditor />} />
+        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
     </BrowserRouter>
   );
