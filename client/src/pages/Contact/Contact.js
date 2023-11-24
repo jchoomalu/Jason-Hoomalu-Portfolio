@@ -1,11 +1,7 @@
 import React from "react";
-import { Container, Form, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 
 const Contact = () => {
-
-
-  
   return (
     <>
       <form
