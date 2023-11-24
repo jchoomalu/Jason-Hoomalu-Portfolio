@@ -7,8 +7,7 @@ const Contact = () => {
       <form
         name="contact"
         class="text-white col-12 col-md-9 mx-auto"
-        data-netlify="true"
-        netlify
+        netlify="true"
       >
         <div class="form-group" id="name">
           <label for="name">Name</label>
