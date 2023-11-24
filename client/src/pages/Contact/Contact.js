@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <form
         name="contact v1"
-        data-netlify="true"
+        netlify="true"
         onSubmit="submit"
       >
         <input type="hidden" name="form-name" value="contact v1" />
