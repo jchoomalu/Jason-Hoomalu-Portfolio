@@ -8,7 +8,6 @@ const Contact = () => {
       <Form
         name="contact"
         className="text-white col-12 col-md-9 mx-auto"
-        data-netlify="true"
         netlify
       >
         <Form.Group controlId="name">
