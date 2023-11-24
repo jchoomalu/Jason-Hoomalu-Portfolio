@@ -7,7 +7,6 @@ const Contact = () => {
       <form
         name="contact"
         class="text-white col-12 col-md-9 mx-auto"
-        netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-group" id="name">
