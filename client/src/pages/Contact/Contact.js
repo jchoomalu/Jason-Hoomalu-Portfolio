@@ -5,22 +5,11 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <Container>
-      <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
       <Form
         name="contact"
         className="text-white col-12 col-md-9 mx-auto"
-        method="POST"
         data-netlify="true"
+        netlify
       >
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
