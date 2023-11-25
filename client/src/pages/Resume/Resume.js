@@ -61,8 +61,9 @@ function Resume() {
     );
   } else {
     return (
+      <>
       <div>
-        <div class="text-center container h-100">
+        <div className="text-center container h-100 mb-5">
           <button
             type="button"
             className="submit-btn my-3 w-50 p-2"
@@ -85,6 +86,7 @@ function Resume() {
           </button>
         </div>
       </div>
+      </>
     );
   }
 }

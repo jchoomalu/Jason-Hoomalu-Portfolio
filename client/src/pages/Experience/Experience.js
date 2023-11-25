@@ -23,6 +23,7 @@ function Experience() {
   };
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -100,6 +101,7 @@ function Experience() {
 
       </Row>
     </div>
+    </>
   );
 }
 

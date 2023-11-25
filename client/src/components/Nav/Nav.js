@@ -55,6 +55,7 @@ function Navigation() {
             <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+            <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
           </NavDropdown>
           <Navbar.Brand className="d-none d-md-block" href="/">
             <Image className="logo" src={logo} />
@@ -65,11 +66,12 @@ function Navigation() {
             <NavDropdown.Item href="/wordslinger">Word Slinger</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="/testimonials">Testimonials</NavDropdown.Item>
+            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
           </NavDropdown>
         </Container>
       </Navbar.Collapse>
     </Navbar>
-      <Image className="accentbar" src={accent} />
+      <Image className="accentbar" src={accent} alt="red and white 3d design" />
   </>
   );
 }

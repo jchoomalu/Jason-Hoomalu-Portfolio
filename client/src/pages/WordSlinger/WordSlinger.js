@@ -25,6 +25,7 @@ function WordSlinger() {
   const wsPlay = "https://delicate-florentine-3bfa34.netlify.app/";
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -93,8 +94,10 @@ function WordSlinger() {
         <Image
           className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
           src={jason}
-        />      </Row>
+        />{" "}
+      </Row>
     </div>
+    </>
   );
 }
 

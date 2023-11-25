@@ -25,6 +25,7 @@ function SymbolSaga() {
   const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -94,6 +95,7 @@ function SymbolSaga() {
         />
       </Row>
     </div>
+    </>
   );
 }
 

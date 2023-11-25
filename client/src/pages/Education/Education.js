@@ -24,6 +24,7 @@ function Education() {
   };
 
   return (
+    <>
     <div>
       <Row className="about-container mx-auto">
         <InnerNav
@@ -47,7 +48,6 @@ function Education() {
                       <li>jQuery</li>
                       <li>RegEx</li>
                       <li>Bootstrap</li>
-                      <li>Semantic UI</li>
                     </ul>
                     <ul className="col-6 col-md-4">
                       <li>MongoDB</li>
@@ -56,7 +56,6 @@ function Education() {
                       <li>React</li>
                       <li>Node</li>
                       <li>Git</li>
-                      <li>CLI</li>
                     </ul>
                   </Row>
                 </Container>
@@ -117,6 +116,7 @@ function Education() {
         <Image className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block" src={jason}/>
       </Row>
     </div>
+    </>
   );
 }
 
