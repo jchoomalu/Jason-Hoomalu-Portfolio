@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Image, Row, Container, Collapse, Tooltip, OverlayTrigger } from "react-bootstrap";
 import mikayla from "../../assets/images/mikayla_munn.png";
 import linkedIn from "../../assets/images/linkedIn.png";
-import Footer from "../../components/Footer/Footer";
 import "./Testimonials.css";
 
 function Testimonials() {
@@ -17,7 +16,7 @@ function Testimonials() {
   return (
     <>
       <Row className="about-container t-container">
-        <Container className="image-container col-4">
+        <Container className="image-container col-10 col-md-5 mx-auto my-3">
         <OverlayTrigger
       placement="top"
       overlay={tooltip}
@@ -44,15 +43,15 @@ function Testimonials() {
           </div>
         </OverlayTrigger>
         </Container>
-        <Container className="text-white col-7">
-          <h4>MERN Instructor - Mikayla Munn </h4>
+        <Container className="text-white col-10 col-md-7 mx-auto">
+          <h4>Mikayla Munn - MERN Instructor</h4>
           <div>
             <p>
-              I have had the pleasure of witnessing Jason's remarkable
+              "I have had the pleasure of witnessing Jason's remarkable
               proficiency and resourcefulness within the MERN stack. He
               showcases an exceptional understanding and skill in navigating the
               development process, particularly in proficiently implementing
-              CRUD operations for MERN applications.
+              CRUD operations for MERN applications...
             </p>
             <Collapse in={open}>
               <div id="collapse-text">
@@ -71,7 +70,7 @@ function Testimonials() {
                   inspiring. He fearlessly embraces new knowledge and willingly
                   goes above and beyond to not just meet but surpass all project
                   requirements. His dedication and proactive approach make him a
-                  standout learner and contributor.
+                  standout learner and contributor."
                 </p>
               </div>
             </Collapse>
@@ -87,7 +86,6 @@ function Testimonials() {
           </div>
         </Container>
       </Row>
-      <Footer />
     </>
   );
 }

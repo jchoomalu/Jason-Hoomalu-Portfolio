@@ -1,93 +1,91 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 
 const Contact = () => {
-
   const handleSubmit = (event) => {
     event.preventDefault();
-  
     const myForm = event.target;
     const formData = new FormData(myForm);
-    
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        alert("Message Sent, I look forward to speaking with you.")
-        document.location.href = "/"
+        alert("Message sent. I look forward to speaking with you.")
       })
-      .catch((error) => alert(error));
+      
+      .catch((error) => {
+        alert("Error sending message.")
+      });
   };
 
-  return (
-    <>
-    <div class="container mb-5">
-      <form
-        name="contact"
-        class="text-white col-12 col-md-9 mx-auto"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="form-group" id="name">
-          <label for="name">Name</label>
-          <input
-            class="form-control my-1"
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-          />
-        </div>
-
-        <div class="row">
-          <div class="col my-1" md="6">
-            <div class="form-group" id="email">
-              <label for="email">Email address</label>
+    return (
+      <>
+        <div className="container mb-5">
+          <form
+            name="contact"
+            className="text-white col-12 col-md-9 mx-auto"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div className="form-group" id="name">
+              <label htmlFor="name">Name</label>
               <input
-                class="form-control"
-                type="email"
-                name="email"
-                placeholder="email@example.com"
-                required
+                className="form-control my-1"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
               />
             </div>
-          </div>
 
-          <div class="col my-1" md="6">
-            <div class="form-group" id="phone">
-              <label for="phone">Phone Number</label>
-              <input
-                class="form-control"
-                type="tel"
-                name="phone"
-                placeholder="Phone Number (optional)"
-              />
+            <div className="row">
+              <div className="col my-1" md="6">
+                <div className="form-group" id="email">
+                  <label htmlFor="email">Email address</label>
+                  <input
+                    className="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="col my-1" md="6">
+                <div className="form-group" id="phone">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input
+                    className="form-control"
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number (optional)"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="form-group my-1" id="message">
-          <label for="message">Message</label>
-          <textarea
-            class="form-control"
-            rows="5"
-            name="message"
-            placeholder="Enter a message..."
-          ></textarea>
-        </div>
+            <div className="form-group my-1" id="message">
+              <label htmlFor="message">Message</label>
+              <textarea
+                className="form-control"
+                rows="5"
+                name="message"
+                placeholder="Enter a message..."
+              ></textarea>
+            </div>
 
-        <div class="text-center">
-          <button type="submit" className="submit-btn mb-5 w-75 p-2">
-            Send Message
-          </button>
+            <div className="text-center">
+              <button type="submit" className="submit-btn mb-5 w-75 p-2">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
-    <Footer />
-    </>
-  );
+        
+      </>
+    );
 };
 
 export default Contact;

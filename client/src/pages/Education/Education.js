@@ -5,7 +5,6 @@ import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
 import HireButtons from "../../components/HireButtons";
-import Footer from "../../components/Footer/Footer";
 import "./Education.css";
 
 function Education() {
@@ -117,7 +116,6 @@ function Education() {
         <Image className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block" src={jason}/>
       </Row>
     </div>
-    <Footer />
     </>
   );
 }

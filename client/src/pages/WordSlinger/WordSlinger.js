@@ -4,7 +4,6 @@ import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
 import HireButtons from "../../components/HireButtons";
-import Footer from "../../components/Footer/Footer";
 import "./WordSlinger.css";
 
 function WordSlinger() {
@@ -98,7 +97,6 @@ function WordSlinger() {
         />{" "}
       </Row>
     </div>
-    <Footer />
     </>
   );
 }

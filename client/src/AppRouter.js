@@ -9,6 +9,7 @@ import WordSlinger from "./pages/WordSlinger";
 import SymbolSaga from "./pages/SymbolSaga";
 import SymbolSagaMapEditor from "./pages/SymbolSagaMapEditor";
 import Testimonials from "./pages/Testimonials";
+import Footer from "./components/Footer/Footer";
 export const AppRouter = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ export const AppRouter = () => {
         <Route path="/ssmapeditor" element={<SymbolSagaMapEditor />} />
         <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
