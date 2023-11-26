@@ -3,6 +3,7 @@ import { Navbar, NavDropdown, Image, Container } from "react-bootstrap";
 import { useLocation } from "react-router";
 import logo from "../../assets/images/jason_hoomalu_logo_long2.png";
 import accent from "../../assets/images/accent.png";
+import Icons from "../Icons";
 import "./Nav.css";
 
 function Navigation() {
@@ -45,37 +46,52 @@ function Navigation() {
 
   return (
     <>
-    <Navbar className="main-nav" variant="dark" expand="md">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Container className="d-flex justify-content-evenly align-items-center mb-5">
-          <NavDropdown className="pill-dropdown" title={activeAbout} id="aboutMeDropdown">
-            <NavDropdown.Item href="/">About Me</NavDropdown.Item>
-            <NavDropdown.Item href="/education">Education</NavDropdown.Item>
-            <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
-            <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
-          </NavDropdown>
-          <Navbar.Brand className="d-none d-md-block" href="/">
-            <Image className="logo" src={logo} />
-          </Navbar.Brand>
-          <NavDropdown className="pill-dropdown" title={activeProjects} id="projectsDropdown">
-            <NavDropdown.Item href="/symbolsaga">Symbol Saga</NavDropdown.Item>
-            <NavDropdown.Item href="/ssmapeditor">SS Map Editor</NavDropdown.Item>
-            <NavDropdown.Item href="/wordslinger">Word Slinger</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/testimonials">Testimonials</NavDropdown.Item>
-            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
-          </NavDropdown>
-        </Container>
-      </Navbar.Collapse>
-    </Navbar>
+      <Navbar className="main-nav" variant="dark" expand="md">
+      <Icons />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Container className="d-flex justify-content-evenly align-items-center mb-5">
+            <NavDropdown
+              className="pill-dropdown"
+              title={activeAbout}
+              id="aboutMeDropdown"
+            >
+              <NavDropdown.Item href="/">About Me</NavDropdown.Item>
+              <NavDropdown.Item href="/education">Education</NavDropdown.Item>
+              <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
+            </NavDropdown>
+            <Navbar.Brand className="d-none d-md-block" href="/">
+              <Image className="logo" src={logo} />
+            </Navbar.Brand>
+            <NavDropdown
+              className="pill-dropdown"
+              title={activeProjects}
+              id="projectsDropdown"
+            >
+              <NavDropdown.Item href="/symbolsaga">
+                Symbol Saga
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/ssmapeditor">
+                SS Map Editor
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/wordslinger">
+                Word Slinger
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/testimonials">
+                Testimonials
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+            </NavDropdown>
+          </Container>
+        </Navbar.Collapse>
+      </Navbar>
       <Image className="accentbar" src={accent} alt="red and white 3d design" />
-  </>
+    </>
   );
 }
 
 export default Navigation;
-
-

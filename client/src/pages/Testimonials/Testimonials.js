@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Image, Row, Container, Collapse, Tooltip, OverlayTrigger } from "react-bootstrap";
+import {
+  Image,
+  Row,
+  Container,
+  Collapse,
+  Tooltip,
+  OverlayTrigger,
+} from "react-bootstrap";
 import mikayla from "../../assets/images/mikayla_munn.png";
 import linkedIn from "../../assets/images/linkedIn.png";
 import "./Testimonials.css";
@@ -8,40 +15,35 @@ function Testimonials() {
   const [open, setOpen] = useState(false);
 
   const tooltip = (
-    <Tooltip id="visitTooltip">
-      Visit Mikayla on LinkedIn
-    </Tooltip>
+    <Tooltip id="visitTooltip">Visit Mikayla on LinkedIn</Tooltip>
   );
 
   return (
     <>
       <Row className="about-container t-container">
-        <Container className="image-container col-10 col-md-5 mx-auto my-3">
-        <OverlayTrigger
-      placement="top"
-      overlay={tooltip}
-    >
-          <div className="flip-image">
-            <a
-              href="https://www.linkedin.com/in/mikaylamunn/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="image-card">
-                <Image
-                  src={mikayla}
-                  alt="linkedIn profile preview mikayla munn"
-                  className="front-image t-image"
-                />
-                <Image
-                  src={linkedIn}
-                  alt="LinkedIn 3d graphic"
-                  className="back-image t-image"
-                />
-              </div>
-            </a>
-          </div>
-        </OverlayTrigger>
+        <Container className="image-container col-10 col-md-4 offset-md-1 mx-auto my-3">
+          <OverlayTrigger placement="top" overlay={tooltip}>
+            <div className="flip-image">
+              <a
+                href="https://www.linkedin.com/in/mikaylamunn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="image-card">
+                  <Image
+                    src={mikayla}
+                    alt="linkedIn profile preview mikayla munn"
+                    className="front-image t-image"
+                  />
+                  <Image
+                    src={linkedIn}
+                    alt="LinkedIn 3d graphic"
+                    className="back-image t-image"
+                  />
+                </div>
+              </a>
+            </div>
+          </OverlayTrigger>
         </Container>
         <Container className="text-white col-10 col-md-7 mx-auto">
           <h4>Mikayla Munn - MERN Instructor</h4>

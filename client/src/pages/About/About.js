@@ -45,8 +45,8 @@ function About() {
                   education and growth. I have passion for untangling intricate
                   challenges with logic and creativity. I thrive on complexity
                   and flourish on design. My goal is to craft intuitive and
-                  user-friendly UX/UI components, utilizing my expertise to
-                  simplify everyday experiences for users.
+                  user-friendly applications, utilizing my expertise to simplify
+                  everyday experiences for users and developers.
                 </p>
                 <HireButtons />
               </InformationBlock>
@@ -58,12 +58,14 @@ function About() {
                 <h2>Who I Am</h2>
                 <h5>Deicated to service, community and code</h5>
                 <p>
-                  My time in the military taught me two things. People come
-                  first, and never give up. I come from a long line of service
-                  members and the result is a dedicated, compassionate, purpose
-                  driven individual with a great amount of empathy. I firmly
-                  believe that a team needs to harness these things, in
-                  conjunction with academics, to be productive in tech.
+                  Drawing from my military experience, I've embraced two
+                  fundamental principles: prioritizing people and perseverance.
+                  My service cultivated a profound sense of dedication,
+                  compassion, and purpose. These qualities shape me into an
+                  individual with a strong capacity for empathy. I firmly
+                  believe that a successful team in the tech industry must
+                  integrate these attributes alongside ongoing learning and
+                  adaptability to achieve peak productivity.
                 </p>
                 <HireButtons />
               </InformationBlock>
