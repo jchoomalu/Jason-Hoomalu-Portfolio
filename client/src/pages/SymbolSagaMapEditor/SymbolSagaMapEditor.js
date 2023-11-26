@@ -24,7 +24,6 @@ function SymbolSagaMapEditor() {
 
   const ssMapPlay =
     "https://main--splendorous-pudding-738ee6.netlify.app/map.html";
-  const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
 
   return (
     <>
