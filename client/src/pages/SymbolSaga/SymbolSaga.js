@@ -85,7 +85,7 @@ function SymbolSaga() {
                   <a href={ssPlay} target="_blank" rel="noopener noreferrer">
                     Play Symbol Saga Demo
                   </a> :
-                  <p>Not available on mobile</p>}
+                  <p>(Demo not available on mobile)</p>}
                   <HireButtons />
                 </InformationBlock>
               ) : (
@@ -99,7 +99,7 @@ function SymbolSaga() {
                   <a href={ssPlay} target="_blank" rel="noopener noreferrer">
                     Play Symbol Saga Demo
                   </a> :
-                  <p>Not available on mobile</p>}
+                  <p>(Demo not available on mobile)</p>}
                   <HireButtons />
                 </InformationBlock>
               ) : (

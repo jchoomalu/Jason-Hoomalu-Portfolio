@@ -46,16 +46,12 @@ function SymbolSagaMapEditor() {
                   <p>In collaboration with Sebastian Oliveres-Coster</p>
                   <p>
                     This project was made to simplify the map building process
-                    for the tile based RPG{" "}
-                    <a href={ssPlay} target="_blank" rel="noopener noreferrer">
-                      Symbol Saga
-                    </a>{" "}
-                    and other tile based games. The editor uses math and array
-                    methods to create multi-dimensional arrays of tile ID's that
-                    can be used directly in the Symbol Saga code base. Editor
-                    can also import existing maps for quick and easy edits, as
-                    well as lay a tile base as a quick start feature for new
-                    maps.
+                    for the tile based RPG Symbol Saga and other tile based
+                    games. The editor uses math and array methods to create
+                    multi-dimensional arrays of tile ID's that can be used
+                    directly in the Symbol Saga code base. Editor can also
+                    import existing maps for quick and easy edits, as well as
+                    lay a tile base as a quick start feature for new maps.
                   </p>
                   <a href={ssMapPlay} target="_blank" rel="noopener noreferrer">
                     Symbol Saga Map Editor
