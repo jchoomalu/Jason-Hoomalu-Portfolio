@@ -34,7 +34,7 @@ function SymbolSaga() {
     );
   }
 
-  const ssPlay = "https://main--splendorous-pudding-738ee6.netlify.app/";
+  const ssPlay = "https://symbol-saga.netlify.app/";
 
   return (
     <>
