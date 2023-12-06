@@ -9,7 +9,10 @@
   position: relative;
   max-height: 400px;
   min-height: 400px;
+  max-width: 350px;
   right: -4%;
+  bottom: -32px;
+  object-fit: none;
 }
 
 .about-content-wrapper {
@@ -26,4 +29,10 @@
 .about-content.hide {
   transform: translateX(500px);
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1650px) {
+  .about-image {
+    right: -8%
+  }
 }

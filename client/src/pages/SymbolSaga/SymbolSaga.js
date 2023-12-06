@@ -3,7 +3,6 @@ import { Image, Row } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
-import HireButtons from "../../components/HireButtons";
 import "./SymbolSaga.css";
 
 function SymbolSaga() {
@@ -65,7 +64,6 @@ function SymbolSaga() {
                     Play Symbol Saga Demo
                   </a> :
                    <p>(Demo not available on mobile)</p>}
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -86,7 +84,6 @@ function SymbolSaga() {
                     Play Symbol Saga Demo
                   </a> :
                   <p>(Demo not available on mobile)</p>}
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -100,7 +97,6 @@ function SymbolSaga() {
                     Play Symbol Saga Demo
                   </a> :
                   <p>(Demo not available on mobile)</p>}
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""

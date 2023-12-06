@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Image, Row } from "react-bootstrap";
 import InformationBlock from "../../components/InformationBlock";
-import HireButtons from "../../components/HireButtons";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import "./Experience.css";
@@ -50,7 +49,6 @@ function Experience() {
                   player with a commitment to staying updated on emerging trends
                   and technologies in the MERN and other ecosystems.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -71,7 +69,6 @@ function Experience() {
                   and a commitment to upholding values of service, duty, and
                   honor.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -90,7 +87,6 @@ function Experience() {
                   encouraging healthy decision making while being present and
                   engaged.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
