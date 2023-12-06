@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2bdaeef8.css",
+    "main.js": "/static/js/main.08ce1d19.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/jason_hoomalu_logo_long2.png": "/static/media/jason_hoomalu_logo_long2.0fc2887f59bb0a549086.png",
+    "static/media/code_background.png": "/static/media/code_background.d474f84888e63af7acbf.png",
+    "static/media/leather_background.png": "/static/media/leather_background.72e9a501b86221da6b61.png",
+    "static/media/jason_hoomalu.png": "/static/media/jason_hoomalu.b7b0c79ec28374a0ea80.png",
+    "static/media/accent.png": "/static/media/accent.6ec14bdfb4bafee1806c.png",
+    "static/media/mikayla_munn.png": "/static/media/mikayla_munn.c21ff418769ab849f83e.png",
+    "static/media/linkedIn.png": "/static/media/linkedIn.02ec31468fc499b08c15.png",
+    "index.html": "/index.html",
+    "main.2bdaeef8.css.map": "/static/css/main.2bdaeef8.css.map",
+    "main.08ce1d19.js.map": "/static/js/main.08ce1d19.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bdaeef8.css",
+    "static/js/main.08ce1d19.js"
+  ]
+}
