@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Image } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import "./InnerNav.css";
 
 function InnerNav({ linkOne, linkTwo, linkThree, setCurrent }) {
