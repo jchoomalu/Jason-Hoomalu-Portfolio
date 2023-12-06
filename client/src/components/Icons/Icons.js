@@ -1,17 +1,30 @@
-import React from "react"
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import "./Icons.css"
+import React from "react";
+import { Image } from "react-bootstrap";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import jason from "../../assets/images/jason_hoomalu.png";
+import "./Icons.css";
 
 const Icons = () => {
   return (
     <div className="d-flex nav-icons px-2 px-md-5">
-      <a className="text-white fs-1 p-1 mx-1" target="_blank" href="https://github.com/jchoomalu" rel="noopener noreferrer">
+      <a
+        className="text-white fs-1 p-1 mx-1"
+        target="_blank"
+        href="https://github.com/jchoomalu"
+        rel="noopener noreferrer"
+      >
         <FaGithub />
       </a>
       <br />
-      <a className="text-white fs-1 p-1 mx-1" target="_blank" href="https://www.linkedin.com/in/jason-hoomalu/" rel="noopener noreferrer">
+      <a
+        className="text-white fs-1 p-1 mx-1"
+        target="_blank"
+        href="https://www.linkedin.com/in/jason-hoomalu/"
+        rel="noopener noreferrer"
+      >
         <FaLinkedin />
       </a>
+      <Image className="jason-icon d-block d-md-none" src={jason}></Image>
     </div>
   );
 };
