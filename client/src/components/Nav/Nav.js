@@ -9,6 +9,7 @@ import "./Nav.css";
 function Navigation() {
   const [activeAbout, setActiveAbout] = useState("About Me");
   const [activeProjects, setActiveProjects] = useState("Projects");
+  const [active, setActive] = useState("about");
   const location = useLocation(); // Get the current location using useLocation from React Router
 
   useEffect(() => {
@@ -17,37 +18,73 @@ function Navigation() {
       case "/":
         setActiveAbout("About Me");
         setActiveProjects("Projects");
+        setActive("about");
         break;
       case "/education":
         setActiveAbout("Education");
+        setActive("about");
         break;
       case "/experience":
         setActiveAbout("Experience");
+        setActive("about");
         break;
       case "/contact":
         setActiveAbout("Contact");
+        setActive("");
         break;
       case "/wordslinger":
         setActiveProjects("Word Slinger");
+        setActive("projects");
         break;
       case "/symbolsaga":
         setActiveProjects("Symbol Saga");
+        setActive("projects");
         break;
       case "/ssmapeditor":
         setActiveProjects("SS Map Editor");
+        setActive("projects");
         break;
       case "/testimonials":
         setActiveProjects("Testimonials");
+        setActive("");
+        break;
+      case "/resume":
+        setActiveProjects("Resume");
+        setActive("");
         break;
       default:
         break;
     }
   }, [location.pathname]);
 
+  // all about links
+  let aboutLinks = [
+    <NavDropdown.Item key="0" href="/">About Me</NavDropdown.Item>,
+    <NavDropdown.Item key="1" href="/education">Education</NavDropdown.Item>,
+    <NavDropdown.Item key="2" href="/experience">Experience</NavDropdown.Item>,
+  ];
+  let projectLinks = [
+    <NavDropdown.Item key="3" href="/symbolsaga">Symbol Saga</NavDropdown.Item>,
+    <NavDropdown.Item key="4" href="/ssmapeditor">SS Map Editor</NavDropdown.Item>,
+    <NavDropdown.Item key="5" href="/wordslinger">Word Slinger</NavDropdown.Item>,
+  ];
+  // filter active links
+  if (active === "about") {
+    aboutLinks = aboutLinks.filter(
+      (link) => activeAbout !== link.props.children
+    );
+  }
+
+  if (active === "projects") {
+    projectLinks = projectLinks.filter(
+      (link) => activeProjects !== link.props.children
+    );
+  }
+
   return (
     <>
       <Navbar className="main-nav" variant="dark" expand="md">
-      <Icons />
+        <Icons />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Container className="d-flex justify-content-evenly align-items-center mb-5">
@@ -56,9 +93,7 @@ function Navigation() {
               title={activeAbout}
               id="aboutMeDropdown"
             >
-              <NavDropdown.Item href="/">About Me</NavDropdown.Item>
-              <NavDropdown.Item href="/education">Education</NavDropdown.Item>
-              <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+              {aboutLinks}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
               <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
@@ -71,20 +106,11 @@ function Navigation() {
               title={activeProjects}
               id="projectsDropdown"
             >
-              <NavDropdown.Item href="/symbolsaga">
-                Symbol Saga
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/ssmapeditor">
-                SS Map Editor
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/wordslinger">
-                Word Slinger
-              </NavDropdown.Item>
+              {projectLinks}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/testimonials">
                 Testimonials
               </NavDropdown.Item>
-              <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
             </NavDropdown>
           </Container>
         </Navbar.Collapse>

@@ -1,5 +1,16 @@
 .nav-icons {
   position: absolute;
   top: 0;
-  right: 0
+  right: 0;
+}
+
+.jason-icon {
+  height: 45px;
+  width: 45px;
+  padding: 2px;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
 }
