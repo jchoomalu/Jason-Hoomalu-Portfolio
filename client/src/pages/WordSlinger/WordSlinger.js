@@ -3,7 +3,6 @@ import { Image, Row } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
-import HireButtons from "../../components/HireButtons";
 import "./WordSlinger.css";
 
 function WordSlinger() {
@@ -52,7 +51,6 @@ function WordSlinger() {
                 <a href={wsPlay} target="_blank" rel="noopener noreferrer">
                   Play Word Slinger
                 </a>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -72,7 +70,6 @@ function WordSlinger() {
                 <a href={wsPlay} target="_blank" rel="noopener noreferrer">
                   Play Word Slinger
                 </a>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -84,7 +81,6 @@ function WordSlinger() {
                 <a href={wsPlay} target="_blank" rel="noopener noreferrer">
                   Play Word Slinger
                 </a>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""

@@ -10,3 +10,12 @@
 .submit-btn:hover {
   box-shadow: 0px 0px 5px white;
 }
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}

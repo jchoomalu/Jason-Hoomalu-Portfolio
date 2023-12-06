@@ -3,7 +3,6 @@ import { Image, Row } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
-import HireButtons from "../../components/HireButtons/";
 import "./About.css";
 
 function About() {
@@ -48,7 +47,6 @@ function About() {
                   user-friendly applications, utilizing my expertise to simplify
                   everyday experiences for users and developers.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -67,7 +65,6 @@ function About() {
                   integrate these attributes alongside ongoing learning and
                   adaptability to achieve peak productivity.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""
@@ -87,7 +84,6 @@ function About() {
                   skills but also foster creativity, resilience, and a sense of
                   possibility that they will carry throughout their lives.
                 </p>
-                <HireButtons />
               </InformationBlock>
             ) : (
               ""

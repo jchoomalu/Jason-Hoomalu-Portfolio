@@ -3,7 +3,6 @@ import { Image, Row, Container } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
-import HireButtons from "../../components/HireButtons";
 import "./Education.css";
 
 function Education() {
@@ -58,7 +57,6 @@ function Education() {
                       </ul>
                     </Row>
                   </Container>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -73,10 +71,10 @@ function Education() {
                   <p>
                     Completed a six month in-person, intensive coding program
                     focusing on front-end technologies including HTML, CSS,
-                    Javascript, Jquery, responsive web designs well as debugging
-                    and performance optimization.
+                    Javascript, Jquery, responsive web designs as well as
+                    debugging and performance optimization. Course included both
+                    synchronous and asynchronous coding techniques.
                   </p>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -95,7 +93,6 @@ function Education() {
                     capability to conduct in-depth research and troubleshoot
                     technical issues effectively.
                   </p>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""

@@ -14,21 +14,21 @@ const Footer = () => {
       ></Image>
       <Row className="col-9 px-1 px-md-5">
         <Container className="col-8 my-2 col-md-4">
-          <h4>About Me</h4>
+          <h3>About Me</h3>
           <Nav.Link className="footer-link" href="/">About Me</Nav.Link>
           <Nav.Link className="footer-link" href="/education">Education</Nav.Link>
           <Nav.Link className="footer-link" href="/experience">Experience</Nav.Link>
-        </Container>
-        <Container className="col-8 my-2 col-md-4">
-          <h4>Projects</h4>
-          <Nav.Link className="footer-link" href="/symbolsaga">Symbol Saga</Nav.Link>
-          <Nav.Link className="footer-link" href="/ssmapeditor">SS Map Editor</Nav.Link>
-          <Nav.Link className="footer-link" href="/wordslinger">Word Slinger</Nav.Link>
           <Nav.Link className="footer-link" href="/testimonials">Testimonials</Nav.Link>
         </Container>
         <Container className="col-8 my-2 col-md-4">
-          <h4>Contact</h4>
-          <Nav.Link className="footer-link" href="/contact">Hire Me</Nav.Link>
+          <h3>Projects</h3>
+          <Nav.Link className="footer-link" href="/symbolsaga">Symbol Saga</Nav.Link>
+          <Nav.Link className="footer-link" href="/ssmapeditor">SS Map Editor</Nav.Link>
+          <Nav.Link className="footer-link" href="/wordslinger">Word Slinger</Nav.Link>
+        </Container>
+        <Container className="col-8 my-2 col-md-4">
+          <h3>Contact</h3>
+          <Nav.Link className="footer-link" href="/contact">Contact Me</Nav.Link>
           <Nav.Link className="footer-link" href="/resume">Resume</Nav.Link>
         </Container>
       </Row>

@@ -21,7 +21,7 @@ function Testimonials() {
   return (
     <>
       <Row className="about-container t-container">
-        <Container className="image-container col-10 col-md-4 offset-md-1 mx-auto my-3">
+        <Container className="image-container col-10 col-md-5 offset-md-1 mx-auto my-3">
           <OverlayTrigger placement="top" overlay={tooltip}>
             <div className="flip-image">
               <a
@@ -45,19 +45,19 @@ function Testimonials() {
             </div>
           </OverlayTrigger>
         </Container>
-        <Container className="text-white col-10 col-md-7 mx-auto">
-          <h4>Mikayla Munn - MERN Instructor</h4>
+        <Container className="text-white col-10 col-md-6 mx-auto">
+          <h3>Mikayla Munn - MERN Instructor</h3>
           <div>
-            <p>
-              "I have had the pleasure of witnessing Jason's remarkable
+            <blockquote>
+              <span>"</span>I have had the pleasure of witnessing Jason's remarkable
               proficiency and resourcefulness within the MERN stack. He
               showcases an exceptional understanding and skill in navigating the
               development process, particularly in proficiently implementing
               CRUD operations for MERN applications...
-            </p>
+            </blockquote>
             <Collapse in={open}>
               <div id="collapse-text">
-                <p>
+                <blockquote>
                   During challenging moments, Jason exhibits admirable
                   resilience by effectively utilizing available resources and
                   persistently debugging until a satisfactory resolution is
@@ -66,19 +66,19 @@ function Testimonials() {
                   conscientiousness by actively seeking clarification. This
                   approach ensures a comprehensive understanding before applying
                   newfound knowledge.
-                </p>
-                <p>
+                </blockquote>
+                <blockquote>
                   Jason's proactive attitude towards learning is truly
                   inspiring. He fearlessly embraces new knowledge and willingly
                   goes above and beyond to not just meet but surpass all project
                   requirements. His dedication and proactive approach make him a
-                  standout learner and contributor."
-                </p>
+                  standout learner and contributor.<span>&rdquo;</span>
+                </blockquote>
               </div>
             </Collapse>
             <p
               onClick={() => setOpen(!open)}
-              className="text-end mx-5 fs-5 collapse-btn"
+              className="collapse-btn"
               aria-controls="collapse-text"
               aria-expanded={open}
               style={{ cursor: "pointer" }}

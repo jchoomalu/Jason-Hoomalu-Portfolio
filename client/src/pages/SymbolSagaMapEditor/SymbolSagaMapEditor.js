@@ -55,7 +55,6 @@ function SymbolSagaMapEditor() {
                   <a href={ssMapPlay} target="_blank" rel="noopener noreferrer">
                     Symbol Saga Map Editor
                   </a>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -75,7 +74,6 @@ function SymbolSagaMapEditor() {
                   <a href={ssMapPlay} target="_blank" rel="noopener noreferrer">
                     Symbol Saga Map Editor
                   </a>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
@@ -89,7 +87,6 @@ function SymbolSagaMapEditor() {
                   <a href={ssMapPlay} target="_blank" rel="noopener noreferrer">
                     Symbol Saga Map Editor
                   </a>
-                  <HireButtons />
                 </InformationBlock>
               ) : (
                 ""
