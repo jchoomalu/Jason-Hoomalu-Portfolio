@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Image, Row } from "react-bootstrap";
+import { Image, Row, Container } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
+import wordSlingerDemo from "../../assets/images/wordSlingerDemo.mov"
+import ws1 from "../../assets/images/ws1.png"
+import ws2 from "../../assets/images/ws2.png"
+import ws3 from "../../assets/images/ws3.png"
+import ws4 from "../../assets/images/ws4.png"
 import "./WordSlinger.css";
 
 function WordSlinger() {
@@ -21,7 +26,7 @@ function WordSlinger() {
     }, 50);
   };
 
-  const wsPlay = "https://delicate-florentine-3bfa34.netlify.app/";
+  const wsPlay = "https://word-slinger-quiz.netlify.app";
 
   return (
     <>
@@ -34,7 +39,7 @@ function WordSlinger() {
           linkTwo="Technology"
           linkThree="Project"
         />
-        <div className="col-12 col-md-7 offset-md-1 p-3 about-content-wrapper">
+        <div className="col-12 col-md-7 offset-md-1 p-3 about-content-wrapper mx-auto">
           <div className={`about-content ${current === "" ? "hide" : ""}`}>
             {current === "overview" ? (
               <InformationBlock>
@@ -76,21 +81,38 @@ function WordSlinger() {
             )}
             {current === "project" ? (
               <InformationBlock>
-                <h2>Word Slinger</h2>
-                <h5>Interactive quiz game</h5>
-                <a href={wsPlay} target="_blank" rel="noopener noreferrer">
-                  Play Word Slinger
-                </a>
+                  <Container>
+                      <video
+                      className="mx-auto"
+                        autoPlay
+                        controls
+                      >
+                        <source src={wordSlingerDemo} type="video/mp4"></source>
+                      </video>
+                  </Container>
               </InformationBlock>
             ) : (
               ""
             )}
           </div>
         </div>
-        <Image
-          className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
-          src={jason}
-        />{" "}
+        {current === "project" ? (
+            <div className="thumbnail-container col-12 mx-auto">
+                <Container className="col-6">
+              <Image className="thumbnail-image thumbnail-image-left" src={ws1} />
+              <Image className="thumbnail-image thumbnail-image-left" src={ws2} />
+              </Container>
+              <Container className="col-6">
+              <Image className="thumbnail-image thumbnail-image-right" src={ws3} />
+              <Image className="thumbnail-image thumbnail-image-right" src={ws4} />
+              </Container>
+            </div>
+          ) : (
+            <Image
+              className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
+              src={jason}
+            />
+          )}
       </Row>
     </div>
     </>
