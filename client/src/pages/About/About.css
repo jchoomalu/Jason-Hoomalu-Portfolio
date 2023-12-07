@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 430px;
+  
 }
 
 .about-image {
@@ -17,6 +18,7 @@
 
 .about-content-wrapper {
   padding: 0px;
+  overflow: hidden;
 }
 
 .about-content {

@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Image, Row } from "react-bootstrap";
+import { Container, Image, Row } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
+import ssPreview from "../../assets/images/symbolSagaDemo.mov";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
+import ss1 from "../../assets/images/ss1.png";
+import ss2 from "../../assets/images/ss2.png";
+import ss3 from "../../assets/images/ss3.png";
+import ss4 from "../../assets/images/ss4.png";
 import "./SymbolSaga.css";
 
 function SymbolSaga() {
   const [current, setCurrent] = useState("");
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     setCurrent("overview");
-    if (isMobileDevice()) {
+    if (isMobileDevice() || window.innerWidth < 400) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -46,7 +50,7 @@ function SymbolSaga() {
             linkTwo="Technology"
             linkThree="Project"
           />
-          <div className="col-12 col-md-7 offset-md-1 p-3 about-content-wrapper">
+          <div className="col-12 col-md-7 offset-md-1 p-3 mx-auto about-content-wrapper">
             <div className={`about-content ${current === "" ? "hide" : ""}`}>
               {current === "overview" ? (
                 <InformationBlock>
@@ -59,11 +63,13 @@ function SymbolSaga() {
                     JavaScript and jQuery. I relied on Bootstrap 5 for
                     responsiveness, and animeJS for battle animations.
                   </p>
-                  {!isMobile ?
-                  <a href={ssPlay} target="_blank" rel="noopener noreferrer">
-                    Play Symbol Saga Demo
-                  </a> :
-                   <p>(Demo not available on mobile)</p>}
+                  {!isMobile ? (
+                    <a href={ssPlay} target="_blank" rel="noopener noreferrer">
+                      Play Symbol Saga Demo
+                    </a>
+                  ) : (
+                    <p>(Demo not available on mobile)</p>
+                  )}
                 </InformationBlock>
               ) : (
                 ""
@@ -79,34 +85,51 @@ function SymbolSaga() {
                     for responsiveness, Semantic UI for consistent stlying and
                     animeJS for battle animations.
                   </p>
-                  {!isMobile ?
-                  <a href={ssPlay} target="_blank" rel="noopener noreferrer">
-                    Play Symbol Saga Demo
-                  </a> :
-                  <p>(Demo not available on mobile)</p>}
+                  {!isMobile ? (
+                    <a href={ssPlay} target="_blank" rel="noopener noreferrer">
+                      Play Symbol Saga Demo
+                    </a>
+                  ) : (
+                    <p>(Demo not available on mobile)</p>
+                  )}
                 </InformationBlock>
               ) : (
                 ""
               )}
               {current === "project" ? (
                 <InformationBlock>
-                  <h2>Symbol Saga</h2>
-                  <h5>Tile Based RPG</h5>
-                  {!isMobile ?
-                  <a href={ssPlay} target="_blank" rel="noopener noreferrer">
-                    Play Symbol Saga Demo
-                  </a> :
-                  <p>(Demo not available on mobile)</p>}
+                  <Container>
+                      <video
+                      className="mx-auto"
+                        autoPlay
+                        controls
+                      >
+                        <source src={ssPreview} type="video/mp4"></source>
+                      </video>
+                  </Container>
                 </InformationBlock>
               ) : (
                 ""
               )}
             </div>
           </div>
-          <Image
-            className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
-            src={jason}
-          />
+          {current === "project" ? (
+            <div className="thumbnail-container col-12 mx-auto">
+                <Container className="col-6">
+              <Image className="thumbnail-image" src={ss1} />
+              <Image className="thumbnail-image" src={ss2} />
+              </Container>
+              <Container className="col-6">
+              <Image className="thumbnail-image" src={ss3} />
+              <Image className="thumbnail-image" src={ss4} />
+              </Container>
+            </div>
+          ) : (
+            <Image
+              className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
+              src={jason}
+            />
+          )}
         </Row>
       </div>
     </>
