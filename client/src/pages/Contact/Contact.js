@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = () => {
@@ -60,18 +60,6 @@ const Contact = () => {
                LinkedIn @jason-hoomalu
             </a>
             </div>
-            <div>
-            <FaPhoneSquare className="fs-3 m-2" />
-            <a
-              className="text-white fs-5 contact-link"
-              href="tel:+14064025264"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-               (406) 402-5264
-            </a>
-            </div>
-            
           </div>
           <form
             name="contact"

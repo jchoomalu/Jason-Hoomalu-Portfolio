@@ -24,7 +24,14 @@ const Icons = () => {
       >
         <FaLinkedin />
       </a>
-      <Image className="jason-icon d-block d-md-none" src={jason}></Image>
+      <br />
+      <div className="img-container nac-icons">
+      <a
+      href="/contact"
+      >
+      <Image className="d-block d-md-none jason-icon" src={jason}></Image>
+      </a>
+      </div>
     </div>
   );
 };
