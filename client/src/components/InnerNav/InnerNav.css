@@ -23,5 +23,10 @@
         margin-top: -3%;
     }
 }
+@media screen and (max-width: 767px) {
+    .inner-nav {
+       background-size: auto;
+    }
+}
   
   

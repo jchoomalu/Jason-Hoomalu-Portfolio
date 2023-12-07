@@ -11,3 +11,9 @@
   font-weight: 900;
   text-decoration: underline;
 }
+
+.footer-divider {
+  width: 30%;
+  height: 5px;
+  background-color: black;
+}
