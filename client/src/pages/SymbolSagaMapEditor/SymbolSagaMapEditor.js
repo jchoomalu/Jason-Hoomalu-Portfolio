@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Image, Row } from "react-bootstrap";
+import { Image, Row, Container } from "react-bootstrap";
 import jason from "../../assets/images/jason_hoomalu.png";
 import InnerNav from "../../components/InnerNav/InnerNav";
 import InformationBlock from "../../components/InformationBlock";
+import meDemo from "../../assets/images/mapEditorDemo.mov";
+import me1 from "../../assets/images/me1.png"
+import me2 from "../../assets/images/me2.png"
+import me3 from "../../assets/images/me3.png"
+import me4 from "../../assets/images/me4.png"
 import "./SymbolSagaMapEditor.css";
 
 function SymbolSagaMapEditor() {
@@ -35,7 +40,7 @@ function SymbolSagaMapEditor() {
             linkTwo="Technology"
             linkThree="Project"
           />
-          <div className="col-12 col-md-7 offset-md-1 p-3 about-content-wrapper">
+          <div className="col-12 col-md-7 offset-md-1 p-3 about-content-wrapper mx-auto">
             <div className={`about-content ${current === "" ? "hide" : ""}`}>
               {current === "overview" ? (
                 <InformationBlock>
@@ -79,23 +84,38 @@ function SymbolSagaMapEditor() {
               )}
               {current === "project" ? (
                 <InformationBlock>
-                  <h2>Symbol Saga Map Editor</h2>
-                  <h5>Create and edit tile based maps </h5>
-                  <p>In collaboration with Sebastian Oliveres-Coster</p>
-                  <p></p>
-                  <a href={ssMapPlay} target="_blank" rel="noopener noreferrer">
-                    Symbol Saga Map Editor
-                  </a>
+                  <Container>
+                      <video
+                      className="mx-auto"
+                        autoPlay
+                        controls
+                      >
+                        <source src={meDemo} type="video/mp4"></source>
+                      </video>
+                  </Container>
                 </InformationBlock>
               ) : (
                 ""
               )}
             </div>
           </div>
-          <Image
-            className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
-            src={jason}
-          />
+          {current === "project" ? (
+            <div className="thumbnail-container col-12 mx-auto">
+                <Container className="col-6">
+              <Image className="thumbnail-image thumbnail-image-left" src={me1} />
+              <Image className="thumbnail-image thumbnail-image-left" src={me2} />
+              </Container>
+              <Container className="col-6">
+              <Image className="thumbnail-image thumbnail-image-right" src={me3} />
+              <Image className="thumbnail-image thumbnail-image-right" src={me4} />
+              </Container>
+            </div>
+          ) : (
+            <Image
+              className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
+              src={jason}
+            />
+          )}
         </Row>
       </div>
     </>

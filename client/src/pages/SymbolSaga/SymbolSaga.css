@@ -19,9 +19,16 @@ video {
 }
 
 /* Enlarge the thumbnail image on hover */
-.thumbnail-image:hover {
+.thumbnail-image-left:hover {
   transform: scale(1.5);
   position: relative;
+  left: 50%;
+  z-index: 100000001
+}
+.thumbnail-image-right:hover {
+  transform: scale(1.5);
+  position: relative;
+  right: 50%;
   z-index: 100000001
 }
 

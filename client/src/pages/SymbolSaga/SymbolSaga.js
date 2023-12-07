@@ -8,6 +8,10 @@ import ss1 from "../../assets/images/ss1.png";
 import ss2 from "../../assets/images/ss2.png";
 import ss3 from "../../assets/images/ss3.png";
 import ss4 from "../../assets/images/ss4.png";
+import ss5 from "../../assets/images/ss5.png";
+import ss6 from "../../assets/images/ss6.png";
+import ss7 from "../../assets/images/ss7.png";
+import ss8 from "../../assets/images/ss8.png";
 import "./SymbolSaga.css";
 
 function SymbolSaga() {
@@ -99,13 +103,9 @@ function SymbolSaga() {
               {current === "project" ? (
                 <InformationBlock>
                   <Container>
-                      <video
-                      className="mx-auto"
-                        autoPlay
-                        controls
-                      >
-                        <source src={ssPreview} type="video/mp4"></source>
-                      </video>
+                    <video className="mx-auto" autoPlay controls>
+                      <source src={ssPreview} type="video/mp4"></source>
+                    </video>
                   </Container>
                 </InformationBlock>
               ) : (
@@ -115,13 +115,45 @@ function SymbolSaga() {
           </div>
           {current === "project" ? (
             <div className="thumbnail-container col-12 mx-auto">
-                <Container className="col-6">
-              <Image className="thumbnail-image" src={ss1} />
-              <Image className="thumbnail-image" src={ss2} />
+              <Container className="col-6">
+                <Image
+                  className="thumbnail-image thumbnail-image-left"
+                  src={ss1}
+                />
+                <Image
+                  className="thumbnail-image thumbnail-image-left"
+                  src={ss2}
+                />
               </Container>
               <Container className="col-6">
-              <Image className="thumbnail-image" src={ss3} />
-              <Image className="thumbnail-image" src={ss4} />
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss3}
+                />
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss4}
+                />
+              </Container>
+              <Container className="col-6">
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss5}
+                />
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss6}
+                />
+              </Container>
+              <Container className="col-6">
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss7}
+                />
+                <Image
+                  className="thumbnail-image thumbnail-image-right"
+                  src={ss8}
+                />
               </Container>
             </div>
           ) : (
