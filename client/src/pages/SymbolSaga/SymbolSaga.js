@@ -137,11 +137,11 @@ function SymbolSaga() {
               </Container>
               <Container className="col-6">
                 <Image
-                  className="thumbnail-image thumbnail-image-right"
+                  className="thumbnail-image thumbnail-image-left"
                   src={ss5}
                 />
                 <Image
-                  className="thumbnail-image thumbnail-image-right"
+                  className="thumbnail-image thumbnail-image-left"
                   src={ss6}
                 />
               </Container>
