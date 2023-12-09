@@ -87,7 +87,6 @@ function SymbolSagaMapEditor() {
                   <Container>
                       <video
                       className="mx-auto"
-                        autoPlay
                         controls
                       >
                         <source src={meDemo} type="video/mp4"></source>

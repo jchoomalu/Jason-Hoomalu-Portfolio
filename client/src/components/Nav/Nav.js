@@ -99,7 +99,7 @@ function Navigation() {
               <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
             </NavDropdown>
             <Navbar.Brand className="d-none d-md-block" href="/">
-              <Image className="logo" src={logo} />
+              <Image className="logo" src={logo} alt="Jason Hoomalu full stack developer" />
             </Navbar.Brand>
             <NavDropdown
               className="pill-dropdown"

@@ -25,11 +25,11 @@ const Icons = () => {
         <FaLinkedin />
       </a>
       <br />
-      <div className="img-container nac-icons">
+      <div className="img-container">
       <a
       href="/contact"
       >
-      <Image className="d-block d-md-none jason-icon" src={jason}></Image>
+      <Image className="d-block d-md-none jason-icon" src={jason} alt="Jason Hoomalu professinal icon"></Image>
       </a>
       </div>
     </div>

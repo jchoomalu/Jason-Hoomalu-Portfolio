@@ -103,7 +103,7 @@ function SymbolSaga() {
               {current === "project" ? (
                 <InformationBlock>
                   <Container>
-                    <video className="mx-auto" autoPlay controls>
+                    <video className="mx-auto" controls>
                       <source src={ssPreview} type="video/mp4"></source>
                     </video>
                   </Container>
