@@ -2,7 +2,6 @@ video {
   width: 100%;
 }
 
-/* Add CSS for the thumbnail container */
 .thumbnail-container {
   display: flex;
   flex-wrap: wrap;
@@ -14,8 +13,8 @@ video {
   margin: auto;
   height: auto;
   transition: transform 0.3s ease-in-out;
-  border-radius: 5px;
- 
+  border-radius: 35px;
+  padding: 6px;
 }
 
 /* Enlarge the thumbnail image on hover */

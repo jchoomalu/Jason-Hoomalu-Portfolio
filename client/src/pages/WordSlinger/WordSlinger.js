@@ -84,7 +84,6 @@ function WordSlinger() {
                   <Container>
                       <video
                       className="mx-auto"
-                        autoPlay
                         controls
                       >
                         <source src={wordSlingerDemo} type="video/mp4"></source>
