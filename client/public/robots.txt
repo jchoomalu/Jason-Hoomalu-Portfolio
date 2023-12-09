@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+allow: /
+Sitemap: https://jason-hoomalu-portfolio.netlify.app/

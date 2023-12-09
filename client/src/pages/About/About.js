@@ -93,6 +93,7 @@ function About() {
         <Image
           className="about-image col-4 col-xl-3 offset-xl-1 d-none d-md-block"
           src={jason}
+          alt="Jason Hoomalu professional"
         />
       </Row>
     </div>
