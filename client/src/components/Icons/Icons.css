@@ -17,3 +17,10 @@
   width: 45px;
   border-radius: 50%;
 }
+
+.icon:hover {
+  font-size: larger;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px white;
+}
