@@ -13,7 +13,7 @@ const Icons = () => {
         href="https://github.com/jchoomalu"
         rel="noopener noreferrer"
       >
-        <FaGithub />
+        <FaGithub className="icon" />
       </a>
       <br />
       <a
@@ -22,7 +22,7 @@ const Icons = () => {
         href="https://www.linkedin.com/in/jason-hoomalu/"
         rel="noopener noreferrer"
       >
-        <FaLinkedin />
+        <FaLinkedin className="icon" />
       </a>
       <br />
       <div className="img-container">
