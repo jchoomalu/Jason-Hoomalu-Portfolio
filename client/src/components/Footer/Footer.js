@@ -12,7 +12,7 @@ const Footer = () => {
         src={accent}
         alt="red and white 3d design"
       ></Image>
-      <Row className="col-9 px-1 px-md-5 mx-auto">
+      <Row className="col-9 px-1 px-md-5 mx-2 mx-md-auto">
         <Container className="col-12 my-2 col-md-4">
           <h3>About Me</h3>
           <hr className="footer-divider" />

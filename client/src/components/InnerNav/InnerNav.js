@@ -9,14 +9,14 @@ function InnerNav({ linkOne, linkTwo, linkThree, setCurrent }) {
   return (
     <Navbar variant="dark" className="inner-nav">
       <Navbar id="inner-navbar">
-        <Nav className="mr-auto p-4 p-sm-0 ">
-          <Nav.Link onClick={handleCurrent} name={linkOne} className="p-2">
+        <Nav className="innernav-container">
+          <Nav.Link onClick={handleCurrent} name={linkOne} className="first-link">
             {linkOne}
           </Nav.Link>
-          <Nav.Link onClick={handleCurrent} name={linkTwo} className="p-2">
+          <Nav.Link onClick={handleCurrent} name={linkTwo}>
             {linkTwo}
           </Nav.Link>
-          <Nav.Link onClick={handleCurrent} name={linkThree} className="p-2">
+          <Nav.Link onClick={handleCurrent} name={linkThree}>
             {linkThree}
           </Nav.Link>
         </Nav>
